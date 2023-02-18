@@ -1,6 +1,8 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import OwlCarousel from "react-owl-carousel"
+import loadable from "@loadable/component"
+
+const OwlCarousel = loadable(() => import("react-owl-carousel"))
 
 const DidYouKnow = () => {
   const { dyk_data } = useStaticQuery(graphql`

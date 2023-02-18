@@ -1,8 +1,9 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import OwlCarousel from "react-owl-carousel"
-
+import loadable from "@loadable/component"
 import { BgGlobe } from "../../utils/imgImport"
+
+const OwlCarousel = loadable(() => import("react-owl-carousel"))
 
 const WorldLogos = () => {
   const options = {

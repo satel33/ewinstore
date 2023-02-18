@@ -1,8 +1,9 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import OwlCarousel from "react-owl-carousel"
-
+import loadable from "@loadable/component"
 import { HeroBG, HeroBGMobile } from "../../utils/imgImport"
+
+const OwlCarousel = loadable(() => import("react-owl-carousel"))
 
 const HomeHero = () => {
   const { hero_data } = useStaticQuery(graphql`
@@ -20,6 +21,7 @@ const HomeHero = () => {
       }
     }
   `)
+
   return (
     <section className="home-hero-canvas main-hero-canvas">
       <div className="main-hero">

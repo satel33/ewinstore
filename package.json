@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@loadable/component": "^5.15.3",
     "@prismicio/react": "^2.5.2",
     "gatsby": "^5.6.0",
     "gatsby-plugin-image": "^3.6.0",
