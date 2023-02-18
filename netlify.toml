@@ -1,0 +1,3 @@
+[build.environment]
+    NODE_VERSION = "18.13.0"
+    NPM_VERSION = "8.19.3" 
