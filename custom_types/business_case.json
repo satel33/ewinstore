@@ -1,0 +1,166 @@
+{
+  "Main": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "UID",
+        "placeholder": "UID"
+      }
+    },
+    "heading": {
+      "type": "Text",
+      "config": {
+        "label": "Heading",
+        "placeholder": "Heading"
+      }
+    },
+    "location": {
+      "type": "Text",
+      "config": {
+        "label": "Location",
+        "placeholder": "Location"
+      }
+    },
+    "date": {
+      "type": "Date",
+      "config": {
+        "label": "Date",
+        "placeholder": "Date"
+      }
+    },
+    "case_image": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Case Image"
+      }
+    },
+    "case_category": {
+      "type": "Link",
+      "config": {
+        "select": "document",
+        "customtypes": ["case_category"],
+        "label": "Case Category",
+        "placeholder": "Category"
+      }
+    },
+    "featured_client": {
+      "type": "Boolean",
+      "config": {
+        "default_value": false,
+        "label": "Featured Client"
+      }
+    }
+  },
+  "Business Info": {
+    "business_logo": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Business Logo"
+      }
+    },
+    "summary": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+        "allowTargetBlank": true,
+        "label": "Summary",
+        "placeholder": "Summary"
+      }
+    },
+    "detail": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+        "label": "Detail",
+        "placeholder": "Detail"
+      }
+    },
+    "sector": {
+      "type": "Text",
+      "config": {
+        "label": "SECTOR",
+        "placeholder": "SECTOR"
+      }
+    },
+    "headquarters": {
+      "type": "Text",
+      "config": {
+        "label": "HEADQUARTERS",
+        "placeholder": "HEADQUARTERS"
+      }
+    },
+    "stores_installed": {
+      "type": "Text",
+      "config": {
+        "label": "STORES INSTALLED",
+        "placeholder": "STORES INSTALLED"
+      }
+    },
+    "deployment_date": {
+      "type": "Text",
+      "config": {
+        "label": "DEPLOYMENT DATE",
+        "placeholder": "DEPLOYMENT DATE"
+      }
+    },
+    "numbers_of_esl_installed": {
+      "type": "Text",
+      "config": {
+        "label": "NUMBERS OF ESL INSTALLED",
+        "placeholder": "NUMBERS OF ESL INSTALLED"
+      }
+    },
+    "referencing_agreement_date": {
+      "type": "Text",
+      "config": {
+        "label": "REFERENCING AGREEMENT DATE",
+        "placeholder": "REFERENCING AGREEMENT DATE"
+      }
+    },
+    "solutions": {
+      "type": "Text",
+      "config": {
+        "label": "SOLUTIONS",
+        "placeholder": "SOLUTIONS"
+      }
+    },
+    "intro_video": {
+      "type": "Link",
+      "config": {
+        "select": "media",
+        "label": "Intro Video",
+        "placeholder": "Intro Video"
+      }
+    }
+  },
+  "Rich Content": {
+    "content": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+        "allowTargetBlank": true,
+        "label": "Content"
+      }
+    }
+  },
+  "Testimonial": {
+    "quote": {
+      "type": "Text",
+      "config": {
+        "label": "Quote",
+        "placeholder": "Quote"
+      }
+    },
+    "credit": {
+      "type": "Text",
+      "config": {
+        "label": "Credit",
+        "placeholder": "Credit"
+      }
+    }
+  }
+}

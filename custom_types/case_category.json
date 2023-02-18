@@ -1,0 +1,39 @@
+{
+  "Main": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "ID"
+      }
+    },
+    "category": {
+      "type": "Text",
+      "config": {
+        "label": "Category",
+        "placeholder": "Category"
+      }
+    },
+    "heading": {
+      "type": "Text",
+      "config": {
+        "label": "Heading",
+        "placeholder": "Heading"
+      }
+    },
+    "description": {
+      "type": "Text",
+      "config": {
+        "label": "Description",
+        "placeholder": "Description"
+      }
+    },
+    "cover_img": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Cover Image"
+      }
+    }
+  }
+}

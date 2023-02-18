@@ -1,0 +1,129 @@
+{
+  "Main": {
+    "seo_title": {
+      "type": "Text",
+      "config": {
+        "label": "SEO Title",
+        "placeholder": "SEO Title"
+      }
+    },
+    "seo_desc": {
+      "type": "Text",
+      "config": {
+        "label": "SEO Description",
+        "placeholder": "SEO Description"
+      }
+    },
+    "seo_keywords": {
+      "type": "Text",
+      "config": {
+        "label": "SEO Keywords",
+        "placeholder": "SEO Keywords"
+      }
+    }
+  },
+  "Hero Text Slider": {
+    "hero_text_slider": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "slider_title": {
+            "type": "Text",
+            "config": {
+              "label": "Slider Title",
+              "placeholder": "Slider Title Here"
+            }
+          },
+          "slider_text": {
+            "type": "Text",
+            "config": {
+              "label": "Slider Text",
+              "placeholder": "Slider Text Here"
+            }
+          },
+          "learn_more_link": {
+            "type": "Text",
+            "config": {
+              "label": "Learn More Link",
+              "placeholder": "Learn More Link Here"
+            }
+          }
+        },
+        "label": "Hero Text Slider"
+      }
+    }
+  },
+  "Did You Know": {
+    "dyk_slider": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "dyk_text": {
+            "type": "Text",
+            "config": {
+              "label": "Text",
+              "placeholder": "Did You Know Text Here"
+            }
+          }
+        },
+        "label": "Did You Know Slider"
+      }
+    }
+  },
+  "Logo Slider": {
+    "logos": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "logo_img": {
+            "type": "Image",
+            "config": {
+              "constraint": {},
+              "thumbnails": [],
+              "label": "Logo Image"
+            }
+          }
+        },
+        "label": "Logos"
+      }
+    }
+  },
+  "Testimonials Slider": {
+    "t_heading": {
+      "type": "Text",
+      "config": {
+        "label": "Testimonial Heading",
+        "placeholder": "Testimonial Heading"
+      }
+    },
+    "t_description": {
+      "type": "Text",
+      "config": {
+        "label": "Testimonial Description",
+        "placeholder": "Testimonial Description"
+      }
+    },
+    "testimonials": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "quote": {
+            "type": "Text",
+            "config": {
+              "label": "Quote",
+              "placeholder": "Quote"
+            }
+          },
+          "credit": {
+            "type": "Text",
+            "config": {
+              "label": "Credit",
+              "placeholder": "Credit"
+            }
+          }
+        },
+        "label": "Testimonials"
+      }
+    }
+  }
+}
