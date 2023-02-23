@@ -13,7 +13,6 @@ const WorldLogos = () => {
     autoplayHoverPause: true,
     dots: false,
     nav: false,
-    // slideTransition: "linear",
     autoplaySpeed: 5000,
     smartSpeed: 5000,
     lazyLoad: true,

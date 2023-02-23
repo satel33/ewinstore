@@ -24730,8 +24730,8 @@ video:focus {
 }
 
 .partners-canvas .partners {
-  background: url(/images/backgrounds/pages/home/partners-section-globe.png) top
-    3.125rem center no-repeat;
+  background: url(../images/pages/home/partners-section-globe.png) top 3.125rem
+    center no-repeat;
   padding: 9.375rem 0 6.25rem;
   text-align: center;
 }
@@ -24831,17 +24831,15 @@ video:focus {
 }
 
 .newsletter-canvas {
-  background: #003594
-    url(/images/backgrounds/pages/home/home-newsletter-section-bg.jpg) 100% 0
-    no-repeat;
+  background: #003594 url(../images/pages/home/home-newsletter-section-bg.jpg)
+    100% 0 no-repeat;
   padding: 0 1.5rem;
 }
 
 @media (max-width: 575px) {
   .newsletter-canvas {
-    background: #003594
-      url(/images/backgrounds/pages/home/home-newsletter-section-bg.jpg) top
-      right 100% no-repeat;
+    background: #003594 url(../images/pages/home/home-newsletter-section-bg.jpg)
+      top right 100% no-repeat;
     padding: 0;
   }
 }
