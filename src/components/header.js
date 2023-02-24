@@ -348,7 +348,7 @@ const Header = ({ navCases, navNews }) => (
               </div>
             </li>
             <li>
-              <a className="main-link" href="company">
+              <a className="main-link" href="/company">
                 Company
               </a>
               <span className="sub-trigger">

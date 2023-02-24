@@ -16,8 +16,9 @@ import prIcon from "../images/icons/mega-menu/mm-pr-icon.svg"
 import aboutIcon from "../images/icons/mega-menu/mm-about-icon.svg"
 import careerIcon from "../images/icons/mega-menu/mm-career-icon.svg"
 
-import news1 from "../images/pages/news/press-releases/nrf.jpg"
+import news1 from "../images/pages/news/company-news/cn-thumb-a1.jpg"
 import news2 from "../images/pages/news/company-news/cn-thumb-2.jpg"
+import news3 from "../images/pages/news/company-news/cn-thumb-a3.png"
 
 import facebookIcon from "../images/icons/social/facebook-coloured-icon.svg"
 import youtubeIcon from "../images/icons/social/youtube-coloured-icon.svg"
@@ -70,6 +71,26 @@ import eeslIcon from "../images/icons/achievements-data/icon-esl.svg"
 import businessCasesHero from "../images/pages/business-cases/hero/page-business-cases-hero-bg.jpg"
 import pinIcon from "../images/pages/business-cases/icons/pin.svg"
 
+/* Company */
+import companyHero from "../images/pages/company/hero/page-company-hero-bg.png"
+import introduction1 from "../images/pages/company/introduction/1.png"
+import mapImg from "../images/pages/company/milestones/map.png"
+import mapMobileImg from "../images/pages/company/milestones/map-mobile.png"
+import entryIcon1 from "../images/pages/company/milestones/1.svg"
+import entryIcon2 from "../images/pages/company/milestones/2.svg"
+import entryIcon3 from "../images/pages/company/milestones/3.svg"
+import entryIcon4 from "../images/pages/company/milestones/4.svg"
+import entryIcon5 from "../images/pages/company/milestones/5.svg"
+import entryIcon6 from "../images/pages/company/milestones/6.svg"
+import entryIcon7 from "../images/pages/company/milestones/7.svg"
+import featured1 from "../images/pages/company/milestones/featured-1.png"
+import featured2 from "../images/pages/company/milestones/featured-2.png"
+import featured3 from "../images/pages/company/milestones/featured-3.png"
+import featured4 from "../images/pages/company/milestones/featured-4.png"
+import featured5 from "../images/pages/company/milestones/featured-5.png"
+import featured6 from "../images/pages/company/milestones/featured-6.png"
+import featured7 from "../images/pages/company/milestones/featured-7.png"
+
 export const Logo = logo
 
 export const ESLIcon = eslIcon
@@ -94,6 +115,7 @@ export const TwitterIcon = twitterIcon
 
 export const News1 = news1
 export const News2 = news2
+export const News3 = news3
 
 //Backgournd images
 export const HeroBG = heroBG
@@ -140,3 +162,23 @@ export const EeslIcon = eeslIcon
 /* Business Case */
 export const BusinessCasesHero = businessCasesHero
 export const PinIcon = pinIcon
+
+/* Company */
+export const CompanyHero = companyHero
+export const Introduction1 = introduction1
+export const MapImg = mapImg
+export const MapMobileImg = mapMobileImg
+export const EntryIcon1 = entryIcon1
+export const EntryIcon2 = entryIcon2
+export const EntryIcon3 = entryIcon3
+export const EntryIcon4 = entryIcon4
+export const EntryIcon5 = entryIcon5
+export const EntryIcon6 = entryIcon6
+export const EntryIcon7 = entryIcon7
+export const Featured1 = featured1
+export const Featured2 = featured2
+export const Featured3 = featured3
+export const Featured4 = featured4
+export const Featured5 = featured5
+export const Featured6 = featured6
+export const Featured7 = featured7
