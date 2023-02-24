@@ -1,4 +1,6 @@
+import { Link } from "gatsby"
 import * as React from "react"
+import { getCasesWithCategory } from "../utils/helpers"
 import {
   AboutIcon,
   AIIcon,
@@ -11,13 +13,12 @@ import {
   HRCIcon,
   ISIcon,
   Logo,
-  News1,
   News2,
   PharmacyIcon,
   PRIcon,
 } from "../utils/imgImport"
 
-const Header = () => (
+const Header = ({ navCases, navNews }) => (
   <header className="main-header">
     <div className="mh-inner">
       <div className="logo">
@@ -32,7 +33,7 @@ const Header = () => (
             <li>
               <a
                 className="main-link"
-                href="solutions/category/electronic-shelf-labels.html"
+                href="/solutions/category/electronic-shelf-labels"
               >
                 Solutions
               </a>
@@ -56,25 +57,25 @@ const Header = () => (
                             <span className="hl-icon">
                               <img src={ESLIcon} alt="esl-icon" />
                             </span>
-                            <a href="solutions/category/electronic-shelf-labels.html">
+                            <a href="/solutions/category/electronic-shelf-labels">
                               ELECTRONIC SHELF LABELS
                             </a>
                           </div>
                           <ul className="fade-in-left delay-03s">
                             <li>
-                              <a href="nebular.html">NEBULAR</a>
+                              <a href="/nebular">NEBULAR</a>
                             </li>
                           </ul>
                           <ul className="fade-in-left delay-03s"></ul>
                           <ul className="fade-in-left delay-03s">
                             <li>
-                              <a href="stellar-pro.html">STELLAR PRO</a>
+                              <a href="/stellar-pro">STELLAR PRO</a>
                             </li>
                           </ul>
                           <ul className="fade-in-left delay-03s"></ul>
                           <ul className="fade-in-left delay-03s">
                             <li>
-                              <a href="lumina-aqua.html">LUMINA AQUA</a>
+                              <a href="/lumina-aqua">LUMINA AQUA</a>
                             </li>
                           </ul>
                           <ul className="fade-in-left delay-03s"></ul>
@@ -84,26 +85,26 @@ const Header = () => (
                             <span className="hl-icon">
                               <img src={ISIcon} alt="esl-icon" />
                             </span>
-                            <a href="solutions/category/intelligent-store.html">
+                            <a href="/solutions/category/intelligent-store">
                               INTELLIGENT STORE
                             </a>
                           </div>
                           <span className="lg-label">In-store Marketing</span>
                           <ul className="fade-in-left delay-03s">
                             <li>
-                              <a href="lumina-aqua.html">LUMINA AQUA</a>
+                              <a href="/lumina-aqua">LUMINA AQUA</a>
                             </li>
                             <li>
-                              <a href="lumina-edge.html">LUMINA MAX / EDGE</a>
+                              <a href="/lumina-edge">LUMINA MAX / EDGE</a>
                             </li>
                           </ul>
                           <span className="lg-label">Payment Solutions</span>
                           <ul className="fade-in-left delay-03s">
                             <li>
-                              <a href="smart-trolley.html">SMART TROLLEY</a>
+                              <a href="/smart-trolley">SMART TROLLEY</a>
                             </li>
                             <li>
-                              <a href="self-service-kiosk.html">
+                              <a href="/self-service-kiosk">
                                 SELF-SERVICE TERMINAL
                               </a>
                             </li>
@@ -114,19 +115,19 @@ const Header = () => (
                             <span className="hl-icon">
                               <img src={AIIcon} alt="esl-icon" />
                             </span>
-                            <a href="solutions/category/ai-plus-solutions.html">
+                            <a href="/solutions/category/ai-plus-solutions">
                               AIOT Solution
                             </a>
                           </div>
                           <ul className="fade-in-left delay-03s">
                             <li>
-                              <a href="spatrol.html">Inventory Robot</a>
+                              <a href="/spatrol">Inventory Robot</a>
                             </li>
                           </ul>
                           <ul className="fade-in-left delay-03s"></ul>
                           <ul className="fade-in-left delay-03s">
                             <li>
-                              <a href="visight.html">Planogram AI Camera</a>
+                              <a href="/visight">Planogram AI Camera</a>
                             </li>
                           </ul>
                           <ul className="fade-in-left delay-03s"></ul>
@@ -134,13 +135,13 @@ const Header = () => (
                             <span className="hl-icon">
                               <img src={HRCIcon} alt="esl-icon" />
                             </span>
-                            <a href="solutions/category/all-star-cloud.html">
+                            <a href="/solutions/category/all-star-cloud">
                               HANSHOW IOT CLOUD
                             </a>
                           </div>
                           <ul className="fade-in-left delay-03s">
                             <li>
-                              <a href="solutions/category/all-star-cloud.html">
+                              <a href="/solutions/category/all-star-cloud">
                                 ALL STAR Platform
                               </a>
                             </li>
@@ -154,7 +155,7 @@ const Header = () => (
               </div>
             </li>
             <li>
-              <a className="main-link" href="business-cases.html">
+              <a className="main-link" href="/business-cases">
                 Business Cases
               </a>
               <span className="sub-trigger">
@@ -177,35 +178,21 @@ const Header = () => (
                             <span className="hl-icon">
                               <img src={GroceryIcon} alt="esl-icon" />
                             </span>
-                            <a href="business-cases.html#grocery">GROCERY</a>
+                            <a href="/business-cases#grocery">GROCERY</a>
                           </div>
                           <span className="lg-label">
                             Featured Client Case Studies
                           </span>
                           <ul className="fade-in-left delay-03s">
-                            <li>
-                              <a href="case/groupement-les-mousquetaires.html">
-                                Intermarché
-                              </a>
-                            </li>
-                            <li>
-                              <a href="case/louis-delhaize-group.html">
-                                Match Belgium
-                              </a>
-                            </li>
-                            <li>
-                              <a href="case/spar-in-france-group-casino.html">
-                                SPAR France
-                              </a>
-                            </li>
-                            <li>
-                              <a href="case/groupement-syteme-u.html">
-                                System U
-                              </a>
-                            </li>
-                            <li>
-                              <a href="case/u-express.html">U Express</a>
-                            </li>
+                            {getCasesWithCategory(navCases, "grocery").map(
+                              item => (
+                                <li key={item.uid}>
+                                  <Link to={`/case/${item.uid}`}>
+                                    {item.data.featured_client}
+                                  </Link>
+                                </li>
+                              )
+                            )}
                           </ul>
                         </div>
                         <div className="links">
@@ -213,7 +200,7 @@ const Header = () => (
                             <span className="hl-icon">
                               <img src={CEIcon} alt="esl-icon" />
                             </span>
-                            <a href="business-cases.html#electronics">
+                            <a href="business-cases#electronics">
                               Consumer Electronics
                             </a>
                           </div>
@@ -221,23 +208,33 @@ const Header = () => (
                             Featured Client Case Studies
                           </span>
                           <ul className="fade-in-left delay-03s">
-                            <li>
-                              <a href="case/wu-mart.html">Wumart</a>
-                            </li>
+                            {getCasesWithCategory(navCases, "electronics").map(
+                              item => (
+                                <li key={item.uid}>
+                                  <Link to={`/case/${item.uid}`}>
+                                    {item.data.featured_client}
+                                  </Link>
+                                </li>
+                              )
+                            )}
                           </ul>
                           <div className="head-link fade-in-top">
                             <span className="hl-icon">
                               <img src={DIYIcon} alt="esl-icon" />
                             </span>
-                            <a href="business-cases.html#diy">DIY</a>
+                            <a href="business-cases#diy">DIY</a>
                           </div>
                           <span className="lg-label">
                             Featured Client Case Studies
                           </span>
                           <ul className="fade-in-left delay-03s">
-                            <li>
-                              <a href="case/zo%CC%82dio.html">Zôdio</a>
-                            </li>
+                            {getCasesWithCategory(navCases, "diy").map(item => (
+                              <li key={item.uid}>
+                                <Link to={`/case/${item.uid}`}>
+                                  {item.data.featured_client}
+                                </Link>
+                              </li>
+                            ))}
                           </ul>
                         </div>
                         <div className="links">
@@ -245,9 +242,7 @@ const Header = () => (
                             <span className="hl-icon">
                               <img src={PharmacyIcon} alt="esl-icon" />
                             </span>
-                            <a href="business-cases.html#drug-store">
-                              DRUG STORE
-                            </a>
+                            <a href="business-cases#drug-store">DRUG STORE</a>
                           </div>
                           <span className="lg-label">
                             Featured Client Case Studies
@@ -261,7 +256,7 @@ const Header = () => (
                             <span className="hl-icon">
                               <img src={BlogIcon} alt="esl-icon" />
                             </span>
-                            <a href="business-cases.html#manufacturing">
+                            <a href="business-cases#manufacturing">
                               MANUFACTURING
                             </a>
                           </div>
@@ -269,9 +264,16 @@ const Header = () => (
                             Featured Client Case Studies
                           </span>
                           <ul className="fade-in-left delay-03s">
-                            <li>
-                              <a href="case/manufacturer.html">Client A</a>
-                            </li>
+                            {getCasesWithCategory(
+                              navCases,
+                              "manufacturing"
+                            ).map(item => (
+                              <li key={item.uid}>
+                                <Link to={`/case/${item.uid}`}>
+                                  {item.data.featured_client}
+                                </Link>
+                              </li>
+                            ))}
                           </ul>
                         </div>
                       </div>
@@ -281,7 +283,7 @@ const Header = () => (
               </div>
             </li>
             <li>
-              <a className="main-link" href="news.html">
+              <a className="main-link" href="/news">
                 Newsroom
               </a>
               <span className="sub-trigger">
@@ -297,33 +299,29 @@ const Header = () => (
                     <div className="ms-set">
                       <div className="ms-featured">
                         <article className="fade-in-right">
-                          <a
-                            href="news/microsoft-and-sony-semiconductor-solutions-visit-hanshow%E2%80%99s-booth-to-discuss-the-future-of-digital-retail.html"
+                          <Link
+                            to={`/news/${navNews.uid}`}
                             className="article-thumb"
                           >
                             <img
-                              src={News1}
-                              alt="Microsoft and Sony Semiconductor Solutions Visit Hanshow’s Booth to Discuss the Future of Digital Retail"
+                              src={navNews.data.thumb_img.url}
+                              alt={navNews.data.title}
                             />
-                          </a>
+                          </Link>
                           <div className="article-intro">
                             <h2>
-                              <a href="news/microsoft-and-sony-semiconductor-solutions-visit-hanshow%E2%80%99s-booth-to-discuss-the-future-of-digital-retail.html">
-                                Microsoft and Sony Semiconductor Solutions Visit
-                                Hanshow’s Booth to Discuss the Future of Digital
-                                Retail
-                              </a>
+                              <Link to={`/news/${navNews.uid}`}>
+                                {navNews.data.title}
+                              </Link>
                             </h2>
-                            <p>
-                              Hanshow invited Mr. Jun Yamasaki and Mr. Yanai
-                              Shunsuke to visit its exhibition booth and have a
-                              further communication on Partner Enablement
-                              Program.
-                            </p>
+                            <p>{navNews.data.summary}</p>
                             <div className="article-others">
-                              <span className="article-date">17-01-2023</span>-
+                              <span className="article-date">
+                                {navNews.data.date}
+                              </span>
+                              -
                               <a href="#Press" className="article-cat">
-                                Press Releases
+                                {navNews.data.type}
                               </a>
                             </div>
                           </div>
@@ -334,13 +332,13 @@ const Header = () => (
                             <span className="hl-icon">
                               <img src={PRIcon} alt="pr-icon" />
                             </span>
-                            <a href="news.html">Press Releases</a>
+                            <a href="news">Press Releases</a>
                           </div>
                           <div className="head-link">
                             <span className="hl-icon">
                               <img src={BlogIcon} alt="blog-icon" />
                             </span>
-                            <a href="news.html">Blog</a>
+                            <a href="news">Blog</a>
                           </div>
                         </div>
                       </div>
@@ -350,7 +348,7 @@ const Header = () => (
               </div>
             </li>
             <li>
-              <a className="main-link" href="company.html">
+              <a className="main-link" href="company">
                 Company
               </a>
               <span className="sub-trigger">
@@ -366,12 +364,12 @@ const Header = () => (
                     <div className="ms-set">
                       <div className="ms-featured">
                         <article className="fade-in-right">
-                          <a href="#news" className="article-thumb">
+                          <a href="/sitemap" className="article-thumb">
                             <img src={News2} alt="thumb" />
                           </a>
                           <div className="article-intro">
                             <h2>
-                              <a href="#founding">
+                              <a href="/sitemap">
                                 Since Founding in 2012, Hanshow has become one
                                 of the top three ESL Solutions providers
                               </a>
@@ -384,13 +382,13 @@ const Header = () => (
                             <span className="hl-icon">
                               <img src={AboutIcon} alt="about-icon" />
                             </span>
-                            <a href="company.html">About Hanshow</a>
+                            <a href="company">About Hanshow</a>
                           </div>
                           <div className="head-link">
                             <span className="hl-icon">
                               <img src={CareerIcon} alt="career-icon" />
                             </span>
-                            <a href="career.html">Career</a>
+                            <a href="career">Career</a>
                           </div>
                         </div>
                       </div>
@@ -401,7 +399,7 @@ const Header = () => (
             </li>
           </ul>
 
-          <a href="contact.html" className="contact-link">
+          <a href="contact" className="contact-link">
             Contact
           </a>
         </nav>
@@ -409,35 +407,33 @@ const Header = () => (
         <nav className="mobile-nav">
           <ul className="mobile-main-links">
             <li>
-              <a href="solutions/category/electronic-shelf-labels.html">
-                Solutions
-              </a>
+              <a href="solutions/category/electronic-shelf-labels">Solutions</a>
               <span className="sub-trigger">
                 <span className="pm-icon">&nbsp;</span>
               </span>
               <ul className="sub-links">
                 <li>
-                  <a href="solutions/category/electronic-shelf-labels.html">
+                  <a href="solutions/category/electronic-shelf-labels">
                     ELECTRONIC SHELF LABELS
                   </a>
                   <ul>
                     <li className="fade-in-right delay-02s">
-                      <a href="nebular.html">NEBULAR</a>
+                      <a href="nebular">NEBULAR</a>
                     </li>
                   </ul>
                   <ul>
                     <li className="fade-in-right delay-02s">
-                      <a href="stellar-pro.html">STELLAR PRO</a>
+                      <a href="stellar-pro">STELLAR PRO</a>
                     </li>
                   </ul>
                   <ul>
                     <li className="fade-in-right delay-02s">
-                      <a href="lumina-aqua.html">LUMINA AQUA</a>
+                      <a href="lumina-aqua">LUMINA AQUA</a>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a href="solutions/category/intelligent-store.html">
+                  <a href="solutions/category/intelligent-store">
                     INTELLIGENT STORE
                   </a>
                   <ul>
@@ -445,10 +441,10 @@ const Header = () => (
                       <span className="sub-label">In-store Marketing</span>
                     </li>
                     <li className="fade-in-right delay-02s">
-                      <a href="lumina-aqua.html">LUMINA AQUA</a>
+                      <a href="lumina-aqua">LUMINA AQUA</a>
                     </li>
                     <li className="fade-in-right delay-02s">
-                      <a href="lumina-edge.html">LUMINA MAX / EDGE</a>
+                      <a href="lumina-edge">LUMINA MAX / EDGE</a>
                     </li>
                   </ul>
                   <ul>
@@ -456,35 +452,33 @@ const Header = () => (
                       <span className="sub-label">Payment Solutions</span>
                     </li>
                     <li className="fade-in-right delay-02s">
-                      <a href="smart-trolley.html">SMART TROLLEY</a>
+                      <a href="smart-trolley">SMART TROLLEY</a>
                     </li>
                     <li className="fade-in-right delay-02s">
-                      <a href="self-service-kiosk.html">
-                        SELF-SERVICE TERMINAL
-                      </a>
+                      <a href="self-service-kiosk">SELF-SERVICE TERMINAL</a>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a href="solutions/category/ai-plus-solutions.html">
+                  <a href="solutions/category/ai-plus-solutions">
                     AIOT Solution
                   </a>
                   <ul>
                     <li className="fade-in-right delay-02s">
-                      <a href="spatrol.html">Inventory Robot</a>
+                      <a href="spatrol">Inventory Robot</a>
                     </li>
                   </ul>
                   <ul>
                     <li className="fade-in-right delay-02s">
-                      <a href="visight.html">Planogram AI Camera</a>
+                      <a href="visight">Planogram AI Camera</a>
                     </li>
                   </ul>
-                  <a href="solutions/category/all-star-cloud.html">
+                  <a href="solutions/category/all-star-cloud">
                     HANSHOW IOT CLOUD
                   </a>
                   <ul>
                     <li className="fade-in-right delay-02s">
-                      <a href="solutions/category/all-star-cloud.html">
+                      <a href="solutions/category/all-star-cloud">
                         ALL STAR Platform
                       </a>
                     </li>
@@ -493,13 +487,13 @@ const Header = () => (
               </ul>
             </li>
             <li>
-              <a href="business-cases.html">Business Cases</a>
+              <a href="business-cases">Business Cases</a>
               <span className="sub-trigger">
                 <span className="pm-icon">&nbsp;</span>
               </span>
               <ul className="sub-links">
                 <li>
-                  <a href="business-cases.html#grocery">GROCERY</a>
+                  <a href="business-cases#grocery">GROCERY</a>
                   <ul>
                     <li className="fade-in-right delay-02s">
                       <span className="sub-label">
@@ -507,30 +501,26 @@ const Header = () => (
                       </span>
                     </li>
                     <li className="fade-in-right delay-02s">
-                      <a href="case/groupement-les-mousquetaires.html">
+                      <a href="case/groupement-les-mousquetaires">
                         Intermarché
                       </a>
                     </li>
                     <li className="fade-in-right delay-02s">
-                      <a href="case/louis-delhaize-group.html">Match Belgium</a>
+                      <a href="case/louis-delhaize-group">Match Belgium</a>
                     </li>
                     <li className="fade-in-right delay-02s">
-                      <a href="case/spar-in-france-group-casino.html">
-                        SPAR France
-                      </a>
+                      <a href="case/spar-in-france-group-casino">SPAR France</a>
                     </li>
                     <li className="fade-in-right delay-02s">
-                      <a href="case/groupement-syteme-u.html">System U</a>
+                      <a href="case/groupement-syteme-u">System U</a>
                     </li>
                     <li className="fade-in-right delay-02s">
-                      <a href="case/u-express.html">U Express</a>
+                      <a href="case/u-express">U Express</a>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a href="business-cases.html#electronics">
-                    Consumer Electronics
-                  </a>
+                  <a href="business-cases#electronics">Consumer Electronics</a>
                   <ul>
                     <li className="fade-in-right delay-02s">
                       <span className="sub-label">
@@ -538,10 +528,10 @@ const Header = () => (
                       </span>
                     </li>
                     <li className="fade-in-right delay-02s">
-                      <a href="case/wu-mart.html">Wumart</a>
+                      <a href="case/wu-mart">Wumart</a>
                     </li>
                   </ul>
-                  <a href="business-cases.html#diy">DIY</a>
+                  <a href="business-cases#diy">DIY</a>
                   <ul>
                     <li className="fade-in-right delay-02s">
                       <span className="sub-label">
@@ -549,12 +539,12 @@ const Header = () => (
                       </span>
                     </li>
                     <li className="fade-in-right delay-02s">
-                      <a href="case/zo%CC%82dio.html">Zôdio</a>
+                      <a href="case/zo%CC%82dio">Zôdio</a>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a href="business-cases.html#drug-store">DRUG STORE</a>
+                  <a href="business-cases#drug-store">DRUG STORE</a>
                   <ul>
                     <li className="fade-in-right delay-02s">
                       <span className="sub-label">
@@ -565,7 +555,7 @@ const Header = () => (
                       <a href="#PHARMAGEST">PHARMAGEST</a>
                     </li>
                   </ul>
-                  <a href="business-cases.html#manufacturing">MANUFACTURING</a>
+                  <a href="business-cases#manufacturing">MANUFACTURING</a>
                   <ul>
                     <li className="fade-in-right delay-02s">
                       <span className="sub-label">
@@ -573,46 +563,46 @@ const Header = () => (
                       </span>
                     </li>
                     <li className="fade-in-right delay-02s">
-                      <a href="case/manufacturer.html">Client A</a>
+                      <a href="case/manufacturer">Client A</a>
                     </li>
                   </ul>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="news.html">Newsroom</a>
+              <a href="news">Newsroom</a>
               <span className="sub-trigger">
                 <span className="pm-icon">&nbsp;</span>
               </span>
               <ul className="sub-links">
                 <li>
-                  <a href="news.html">Blog</a>
+                  <a href="news">Blog</a>
                 </li>
                 <li>
-                  <a href="news.html">Press Releases</a>
+                  <a href="news">Press Releases</a>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="company.html">Company</a>
+              <a href="company">Company</a>
               <span className="sub-trigger">
                 <span className="pm-icon">&nbsp;</span>
               </span>
               <ul className="sub-links">
                 <li>
-                  <a href="company.html">About Hanshow</a>
+                  <a href="company">About Hanshow</a>
                 </li>
                 <li>
-                  <a href="career.html">Career</a>
+                  <a href="career">Career</a>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="contact.html">Contact</a>
+              <a href="contact">Contact</a>
             </li>
           </ul>
 
-          <a href="contact.html" className="contact-link">
+          <a href="contact" className="contact-link">
             Contact
           </a>
         </nav>

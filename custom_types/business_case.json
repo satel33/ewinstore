@@ -53,10 +53,17 @@
       }
     },
     "featured_client": {
+      "type": "Text",
+      "config": {
+        "label": "Featured Client",
+        "placeholder": "Featured Client"
+      }
+    },
+    "is_featured": {
       "type": "Boolean",
       "config": {
         "default_value": false,
-        "label": "Featured Client"
+        "label": "Is Featured"
       }
     }
   },
@@ -72,7 +79,7 @@
     "about_business": {
       "type": "StructuredText",
       "config": {
-        "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+        "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
         "allowTargetBlank": true,
         "label": "About Business",
         "placeholder": "About Business"

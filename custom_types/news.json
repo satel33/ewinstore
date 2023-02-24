@@ -13,6 +13,13 @@
         "placeholder": "Title"
       }
     },
+    "summary": {
+      "type": "Text",
+      "config": {
+        "label": "Summary",
+        "placeholder": "Summary"
+      }
+    },
     "thumb_img": {
       "type": "Image",
       "config": {

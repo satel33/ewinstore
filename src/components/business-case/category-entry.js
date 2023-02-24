@@ -57,30 +57,32 @@ const CategoryEntry = ({ categories, categoryData, businessCases }) => {
         <div className="bc-articles-canvas">
           <div className="container">
             <div className="bc-articles single-news-cat-section-loadmore-3">
-              {getCasesWithCategory(businessCases, categoryData).map(item => (
-                <article key={item.uid}>
-                  <div className="article-location">
-                    <img src={PinIcon} alt={item.data.location} />
-                    {item.data.location}
-                  </div>
-                  <Link to={`case/${item.uid}`} className="article-thumb">
-                    <img
-                      src={item.data.case_image.url}
-                      alt={item.data.heading}
-                    />
-                  </Link>
-                  <h3>
-                    <Link to={`case/${item.uid}`}>{item.data.heading}</Link>
-                  </h3>
-                  <p>{item.data.summary}</p>
-                  <div className="others">
-                    <span className="article-date">{item.data.date}</span>-
-                    <a href={`#${categoryData.uid}`} className="article-cat">
-                      {categoryData.data.category}
-                    </a>
-                  </div>
-                </article>
-              ))}
+              {getCasesWithCategory(businessCases, categoryData.uid).map(
+                item => (
+                  <article key={item.uid}>
+                    <div className="article-location">
+                      <img src={PinIcon} alt={item.data.location} />
+                      {item.data.location}
+                    </div>
+                    <Link to={`case/${item.uid}`} className="article-thumb">
+                      <img
+                        src={item.data.case_image.url}
+                        alt={item.data.heading}
+                      />
+                    </Link>
+                    <h3>
+                      <Link to={`case/${item.uid}`}>{item.data.heading}</Link>
+                    </h3>
+                    <p>{item.data.summary}</p>
+                    <div className="others">
+                      <span className="article-date">{item.data.date}</span>-
+                      <a href={`#${categoryData.uid}`} className="article-cat">
+                        {categoryData.data.category}
+                      </a>
+                    </div>
+                  </article>
+                )
+              )}
             </div>
             <div className="single-cat-loadmore-section-3 pa-0 ma-0">
               <div className="loadmore-room">

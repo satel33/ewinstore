@@ -1,44 +1,43 @@
+import { Link } from "gatsby"
 import * as React from "react"
 import {
   FacebookIcon,
   LinkedinIcon,
   Logo,
-  News1,
-  News2,
   TwitterIcon,
   YoutubeIcon,
 } from "../utils/imgImport"
 
-const Footer = () => (
+const Footer = ({ navNews }) => (
   <footer className="main-footer">
     <div className="container">
       <div className="footer-top">
         <div className="row">
           <div className="col-sm-6 col-md-4 col-lg">
             <div className="footer-heading">
-              <a href="solutions/category/electronic-shelf-labels.html">
+              <a href="/solutions/category/electronic-shelf-labels">
                 SOLUTIONS
               </a>{" "}
               <span className="footer-mobile-dropdown"></span>
             </div>
             <ul className="footer-links footer-mobile-dropdown-menu">
               <li>
-                <a href="solutions/category/electronic-shelf-labels.html">
+                <a href="/solutions/category/electronic-shelf-labels">
                   Electronic Shelf Labels
                 </a>
               </li>
               <li>
-                <a href="solutions/category/ai-plus-solutions.html">
+                <a href="/solutions/category/ai-plus-solutions">
                   AIoT Solutions
                 </a>
               </li>
               <li>
-                <a href="solutions/category/all-star-cloud.html">
+                <a href="/solutions/category/all-star-cloud">
                   Hanshow IoT Cloud
                 </a>
               </li>
               <li>
-                <a href="solutions/category/intelligent-store.html">
+                <a href="/solutions/category/intelligent-store">
                   Intelligent Store
                 </a>
               </li>
@@ -46,107 +45,87 @@ const Footer = () => (
           </div>
           <div className="col-sm-6 col-md-4 col-lg">
             <div className="footer-heading">
-              <a href="business-cases.html">Business Cases</a>{" "}
+              <a href="/business-cases">Business Cases</a>
               <span className="footer-mobile-dropdown"></span>
             </div>
             <ul className="footer-links footer-mobile-dropdown-menu">
               <li>
-                <a href="business-cases.html#grocery">Grocery</a>
+                <a href="/business-cases#grocery">Grocery</a>
               </li>
               <li>
-                <a href="business-cases.html#diy">DIY</a>
+                <a href="/business-cases#diy">DIY</a>
               </li>
               <li>
-                <a href="business-cases.html#electronics">
-                  Consumer Electronics
-                </a>
+                <a href="/business-cases#electronics">Consumer Electronics</a>
               </li>
               <li>
-                <a href="business-cases.html#drug-store">Drug Store</a>
+                <a href="/business-cases#drug-store">Drug Store</a>
               </li>
               <li>
-                <a href="business-cases.html#manufacturing">Manufacturing</a>
+                <a href="/business-cases#manufacturing">Manufacturing</a>
               </li>
             </ul>
           </div>
           <div className="col-sm-6 col-md-4 col-lg">
             <div className="footer-heading">
-              <a href="news.html">NEWSROOM</a>{" "}
+              <a href="/news">NEWSROOM</a>
               <span className="footer-mobile-dropdown"></span>
             </div>
             <ul className="footer-links footer-mobile-dropdown-menu">
               <li>
-                <a href="news.html">Press Releases</a>
+                <a href="/news">Press Releases</a>
               </li>
               <li>
-                <a href="news.html">Blog</a>
+                <a href="/news">Blog</a>
               </li>
             </ul>
           </div>
           <div className="col-sm-6 col-md-4 col-lg">
             <div className="footer-heading">
-              <a href="company.html">COMPANY</a>{" "}
+              <a href="/company">COMPANY</a>
               <span className="footer-mobile-dropdown"></span>
             </div>
             <ul className="footer-links footer-mobile-dropdown-menu">
               <li>
-                <a href="company.html">About Hanshow</a>
+                <a href="/company">About Hanshow</a>
               </li>
               <li>
-                <a href="career.html">Career</a>
+                <a href="/career">Career</a>
               </li>
               <li>
-                <a href="contact.html">Contact</a>
+                <a href="/contact">Contact</a>
               </li>
               <li>
-                <a href="sitemap.html">Sitemap</a>
+                <a href="/sitemap">Sitemap</a>
               </li>
             </ul>
           </div>
           <div className="footer-news col-md col-lg-4">
             <div className="footer-heading">
-              <a href="news.html">LATEST NEWS</a>{" "}
+              <a href="/news">LATEST NEWS</a>
               <span className="footer-mobile-dropdown"></span>
             </div>
             <ul className="footer-mobile-dropdown-menu">
-              <li>
-                <img
-                  className="footer-news-img img-fluid lazyload"
-                  data-src={News1}
-                  alt="Microsoft and Sony Semiconductor Solutions Visit Hanshow’s Booth to Discuss the Future of Digital Retail"
-                />
-                <div>
-                  <a
-                    href="news/microsoft-and-sony-semiconductor-solutions-visit-hanshow%E2%80%99s-booth-to-discuss-the-future-of-digital-retail.html"
-                    className="footer-news-title"
-                  >
-                    Microsoft and Sony Semiconductor Solutions Visit Hanshow’s
-                    Booth to Discuss the Future of Digital Retail
-                  </a>
-                  <div className="footer-news-date">
-                    17-01-2023 - <a href="#Press">Press Releases</a>
+              {navNews.map(item => (
+                <li key={item.uid}>
+                  <img
+                    className="footer-news-img img-fluid lazyload"
+                    data-src={item.data.thumb_img.url}
+                    alt={item.data.title}
+                  />
+                  <div>
+                    <Link
+                      to={`/news/${item.uid}`}
+                      className="footer-news-title"
+                    >
+                      {item.data.title}
+                    </Link>
+                    <div className="footer-news-date">
+                      {item.data.date} - <a href="#Press">{item.data.type}</a>
+                    </div>
                   </div>
-                </div>
-              </li>
-              <li>
-                <img
-                  className="footer-news-img img-fluid lazyload"
-                  data-src={News2}
-                  alt="Hanshow Unveils New Generation Protocol and Four-Color ESL at NRF 2023"
-                />
-                <div>
-                  <a
-                    href="news/hanshow-unveils-new-generation-protocol-and-four-color-esl-at-nrf-2023.html"
-                    className="footer-news-title"
-                  >
-                    Hanshow Unveils New Generation Protocol and Four-Color ESL
-                    at NRF 2023
-                  </a>
-                  <div className="footer-news-date">
-                    16-01-2023 - <a href="#Press">Press Releases</a>
-                  </div>
-                </div>
-              </li>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
@@ -189,7 +168,7 @@ const Footer = () => (
       </div>
       <div className="footer-copyright">
         © Copyright 2023 Hanshow Technology. All Rights Reserved. |{" "}
-        <a href="privacy-policy.html">Privacy Policy</a> |{" "}
+        <a href="/privacy-policy">Privacy Policy</a> |{" "}
         <a href="https://beian.miit.gov.cn">浙ICP备14040138号</a>
       </div>
     </div>
