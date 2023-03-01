@@ -95,6 +95,29 @@ import awards1 from "../images/pages/company/awards/1.jpg"
 import awards2 from "../images/pages/company/awards/2.jpg"
 import awards4 from "../images/pages/company/awards/4.jpg"
 
+//Careers
+import careersHero from "../images/pages/careers/hero/page-careers-hero-bg.png"
+import careersVideoThumb from "../images/pages/careers/video-thumbnail.jpg"
+import careersAbout1 from "../images/pages/careers/about-1.png"
+import careersAbout2 from "../images/pages/careers/about-2.png"
+import careersAbout3 from "../images/pages/careers/about-3.png"
+import coreValues1 from "../images/pages/careers/core-values-1.png"
+import iconTalent1 from "../images/pages/careers/icon-talent-1.png"
+import iconTalent2 from "../images/pages/careers/icon-talent-2.png"
+import iconTalent3 from "../images/pages/careers/icon-talent-3.png"
+import develop1 from "../images/pages/careers/develop-1.png"
+import develop2 from "../images/pages/careers/develop-2.png"
+import develop3 from "../images/pages/careers/develop-3.png"
+import develop4 from "../images/pages/careers/develop-4.png"
+import activities1 from "../images/pages/careers/activities/1.png"
+import activities2 from "../images/pages/careers/activities/2.png"
+import activities3 from "../images/pages/careers/activities/3.png"
+import activities4 from "../images/pages/careers/activities/4.png"
+import team1 from "../images/pages/careers/team-1.png"
+import offices1 from "../images/pages/careers/offices/1.png"
+import offices2 from "../images/pages/careers/offices/2.jpg"
+import offices3 from "../images/pages/careers/offices/3.jpg"
+
 export const Logo = logo
 
 export const ESLIcon = eslIcon
@@ -190,3 +213,26 @@ export const Featured7 = featured7
 export const Awards1 = awards1
 export const Awards2 = awards2
 export const Awards4 = awards4
+
+//Careers
+export const CareersHero = careersHero
+export const CareersVideoThumb = careersVideoThumb
+export const CareersAbout1 = careersAbout1
+export const CareersAbout2 = careersAbout2
+export const CareersAbout3 = careersAbout3
+export const CoreValues1 = coreValues1
+export const IconTalent1 = iconTalent1
+export const IconTalent2 = iconTalent2
+export const IconTalent3 = iconTalent3
+export const Develop1 = develop1
+export const Develop2 = develop2
+export const Develop3 = develop3
+export const Develop4 = develop4
+export const Activities1 = activities1
+export const Activities2 = activities2
+export const Activities3 = activities3
+export const Activities4 = activities4
+export const Team1 = team1
+export const Offices1 = offices1
+export const Offices2 = offices2
+export const Offices3 = offices3
