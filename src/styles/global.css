@@ -5069,6 +5069,7 @@ body {
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
   text-align: var(--bs-body-text-align);
+  overflow-x: hidden;
 }
 
 hr {
@@ -26416,7 +26417,7 @@ video:focus {
 }
 
 .com-vision-canvas .com-vision {
-  background: url(/images/pages/company/vision/vision-bg.jpg) 50% no-repeat;
+  background: url(../images/pages/company/vision/vision-bg.jpg) 50% no-repeat;
   background-size: cover;
   margin-top: 12.5rem;
   padding: 9.375rem 0;
@@ -26560,7 +26561,7 @@ video:focus {
   .map-entries
   .entry
   .line-path {
-  background: url(/images/pages/company/milestones/ms-path.svg) 50% no-repeat;
+  background: url(../images/pages/company/milestones/ms-path.svg) 50% no-repeat;
   display: block;
   height: 4.1875rem;
   margin-top: 1.875rem;
@@ -26626,7 +26627,7 @@ video:focus {
   .map-entries
   .entry.left
   .line-path {
-  background: url(/images/pages/company/milestones/ms-path-invert.svg) 50%
+  background: url(../images/pages/company/milestones/ms-path-invert.svg) 50%
     no-repeat;
 }
 

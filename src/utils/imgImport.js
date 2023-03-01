@@ -19,6 +19,7 @@ import careerIcon from "../images/icons/mega-menu/mm-career-icon.svg"
 import news1 from "../images/pages/news/company-news/cn-thumb-a1.jpg"
 import news2 from "../images/pages/news/company-news/cn-thumb-2.jpg"
 import news3 from "../images/pages/news/company-news/cn-thumb-a3.png"
+import news4 from "../images/pages/news/company-news/cn-thumb-a2.jpg"
 
 import facebookIcon from "../images/icons/social/facebook-coloured-icon.svg"
 import youtubeIcon from "../images/icons/social/youtube-coloured-icon.svg"
@@ -90,6 +91,9 @@ import featured4 from "../images/pages/company/milestones/featured-4.png"
 import featured5 from "../images/pages/company/milestones/featured-5.png"
 import featured6 from "../images/pages/company/milestones/featured-6.png"
 import featured7 from "../images/pages/company/milestones/featured-7.png"
+import awards1 from "../images/pages/company/awards/1.jpg"
+import awards2 from "../images/pages/company/awards/2.jpg"
+import awards4 from "../images/pages/company/awards/4.jpg"
 
 export const Logo = logo
 
@@ -116,6 +120,7 @@ export const TwitterIcon = twitterIcon
 export const News1 = news1
 export const News2 = news2
 export const News3 = news3
+export const News4 = news4
 
 //Backgournd images
 export const HeroBG = heroBG
@@ -182,3 +187,6 @@ export const Featured4 = featured4
 export const Featured5 = featured5
 export const Featured6 = featured6
 export const Featured7 = featured7
+export const Awards1 = awards1
+export const Awards2 = awards2
+export const Awards4 = awards4
