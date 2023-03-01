@@ -423,6 +423,7 @@ const CompanyPage = () => {
                       <img
                         src="https://www.hanshow.com/storage/images/pages/careers/activities/thumb-1.jpg"
                         className="thumb"
+                        alt=""
                       />
                       Festival Celebrations
                     </button>
@@ -480,6 +481,7 @@ const CompanyPage = () => {
                     <img
                       src="https://www.hanshow.com/storage/images/pages/careers/activities/thumb-1.jpg"
                       className="thumb"
+                      alt=""
                     />
                     Festival Celebrations
                   </button>
@@ -489,6 +491,7 @@ const CompanyPage = () => {
                     <img
                       src="https://www.hanshow.com/storage/images/pages/careers/activities/thumb-2.jpg"
                       className="thumb"
+                      alt=""
                     />
                     Birthday Party
                   </button>
@@ -498,6 +501,7 @@ const CompanyPage = () => {
                     <img
                       src="https://www.hanshow.com/storage/images/pages/careers/activities/thumb-3.jpg"
                       className="thumb"
+                      alt=""
                     />
                     Annual Running Activities
                   </button>
@@ -507,6 +511,7 @@ const CompanyPage = () => {
                     <img
                       src="https://www.hanshow.com/storage/images/pages/careers/activities/thumb-4.jpg"
                       className="thumb"
+                      alt=""
                     />
                     Group Activities
                   </button>
