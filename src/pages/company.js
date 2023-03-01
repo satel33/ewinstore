@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Splide, SplideSlide } from "@splidejs/react-splide"
-import $ from "jQuery"
+import $ from "jquery"
 
 import Layout from "../components/layout"
 import {
