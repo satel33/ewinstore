@@ -26,6 +26,13 @@ import youtubeIcon from "../images/icons/social/youtube-coloured-icon.svg"
 import linkedinIcon from "../images/icons/social/linkedin-coloured-icon.svg"
 import twitterIcon from "../images/icons/social/twitter-coloured-icon.svg"
 
+import linkedinShareIcon from "../images/icons/share/linkedin.svg"
+import googleShareIcon from "../images/icons/share/google.svg"
+import twitterShareIcon from "../images/icons/share/twitter.svg"
+import facebookShareIcon from "../images/icons/share/facebook.svg"
+
+import feedIcon from "../images/icons/share/feed.svg"
+
 //Backgournd images
 import heroBG from "../videos/hero-bg.mp4"
 import heroBGMobile from "../videos/hero-bg-mobile.mp4"
@@ -139,6 +146,13 @@ export const FacebookIcon = facebookIcon
 export const YoutubeIcon = youtubeIcon
 export const LinkedinIcon = linkedinIcon
 export const TwitterIcon = twitterIcon
+
+export const FacebookShareIcon = facebookShareIcon
+export const LinkedinShareIcon = linkedinShareIcon
+export const TwitterShareIcon = twitterShareIcon
+export const GoogleShareIcon = googleShareIcon
+
+export const FeedIcon = feedIcon
 
 export const News1 = news1
 export const News2 = news2

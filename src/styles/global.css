@@ -33685,3 +33685,12 @@ video:focus {
 .footer-logo {
   width: 10.625rem;
 }
+
+.quote {
+  line-height: 1.5 !important;
+}
+.quote span {
+  font-size: 18pt !important;
+}
+
+.block-img {text-align: center;}

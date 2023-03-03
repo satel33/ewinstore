@@ -64,14 +64,14 @@ const CategoryEntry = ({ categories, categoryData, businessCases }) => {
                       <img src={PinIcon} alt={item.data.location} />
                       {item.data.location}
                     </div>
-                    <Link to={`case/${item.uid}`} className="article-thumb">
+                    <Link to={`/case/${item.uid}`} className="article-thumb">
                       <img
                         src={item.data.case_image.url}
                         alt={item.data.heading}
                       />
                     </Link>
                     <h3>
-                      <Link to={`case/${item.uid}`}>{item.data.heading}</Link>
+                      <Link to={`/case/${item.uid}`}>{item.data.heading}</Link>
                     </h3>
                     <p>{item.data.summary}</p>
                     <div className="others">
