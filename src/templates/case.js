@@ -1,6 +1,11 @@
+/* eslint-disable jsx-a11y/media-has-caption */
+
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import { PrismicRichText } from "@prismicio/react"
+import Newsletter from "../components/newsletter"
+import Achievements from "../components/achievements"
 import {
   FacebookShareIcon,
   FeedIcon,
@@ -9,16 +14,12 @@ import {
   PinIcon,
   TwitterShareIcon,
 } from "../utils/imgImport"
-import { PrismicRichText } from "@prismicio/react"
-import Newsletter from "../components/newsletter"
-import Achievements from "../components/achievements"
 
 const CaseDetailPage = ({ data }) => {
   const caseData = data.prismicBusinessCase.data
   const moreCases = data.allPrismicBusinessCase.nodes
   const categories = data.allPrismicCaseCategory.nodes
 
-  console.log("cases detail: ", moreCases.slice(0, 4))
   return (
     <Layout>
       <section className="article-hero-canvas">
@@ -46,7 +47,7 @@ const CaseDetailPage = ({ data }) => {
               <div className="others">
                 <span className="article-date">23-11-2022</span>
                 <span className="text-white mx-2">|</span>
-                <a href="#" className="article-cat">
+                <a href="#grocery" className="article-cat">
                   {" "}
                   Grocery
                 </a>
@@ -58,7 +59,7 @@ const CaseDetailPage = ({ data }) => {
             <div className="share-links">
               <ul>
                 <li>
-                  <a href="#">
+                  <a href="#feed">
                     <img src={FeedIcon} alt="feed" />
                   </a>
                 </li>
@@ -66,6 +67,7 @@ const CaseDetailPage = ({ data }) => {
                   <a
                     href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.hanshow.com/case/jumbo-and-hanshow-announce-a-new-partnership-to-digitize-over-700-stores"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <img src={LinkedinShareIcon} alt="linkedin" />
                   </a>
@@ -74,6 +76,7 @@ const CaseDetailPage = ({ data }) => {
                   <a
                     href="https://plus.google.com/share?url=https://www.hanshow.com/case/jumbo-and-hanshow-announce-a-new-partnership-to-digitize-over-700-stores"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <img src={GoogleShareIcon} alt="google" />
                   </a>
@@ -82,6 +85,7 @@ const CaseDetailPage = ({ data }) => {
                   <a
                     href="https://twitter.com/share?url=https://www.hanshow.com/case/jumbo-and-hanshow-announce-a-new-partnership-to-digitize-over-700-stores"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <img src={TwitterShareIcon} alt="twitter" />
                   </a>
@@ -90,6 +94,7 @@ const CaseDetailPage = ({ data }) => {
                   <a
                     href="https://www.facebook.com/sharer.php?u=https://www.hanshow.com/case/jumbo-and-hanshow-announce-a-new-partnership-to-digitize-over-700-stores"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <img src={FacebookShareIcon} alt="facebook" />
                   </a>
@@ -102,15 +107,15 @@ const CaseDetailPage = ({ data }) => {
           <img
             className="article-image"
             src={caseData.case_image.url}
-            alt="aritcle-image"
+            alt="aritcle img"
           />
         </div>
       </section>
-      <section class="bcindv-info-canvas">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="bcindv-info-logo px-3 py-5 mb-4">
+      <section className="bcindv-info-canvas">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-4">
+              <div className="bcindv-info-logo px-3 py-5 mb-4">
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -126,60 +131,60 @@ const CaseDetailPage = ({ data }) => {
               </div>
               <ul>
                 {caseData.sector && (
-                  <li class="mb-3">
-                    <div class="text-highlight text-uppercase">
+                  <li className="mb-3">
+                    <div className="text-highlight text-uppercase">
                       <strong>Sector:</strong>
                     </div>
                     {caseData.sector}
                   </li>
                 )}
                 {caseData.headquarters && (
-                  <li class="mb-3">
-                    <div class="text-highlight text-uppercase">
+                  <li className="mb-3">
+                    <div className="text-highlight text-uppercase">
                       <strong>Headquarters:</strong>
                     </div>
                     {caseData.headquarters}
                   </li>
                 )}
                 {caseData.stores_installed && (
-                  <li class="mb-3">
-                    <div class="text-highlight text-uppercase">
+                  <li className="mb-3">
+                    <div className="text-highlight text-uppercase">
                       <strong>Stores installed:</strong>
                     </div>
                     {caseData.stores_installed}
                   </li>
                 )}
                 {caseData.solutions && (
-                  <li class="text-highlight mb-3">
+                  <li className="text-highlight mb-3">
                     <strong>
-                      <span class="text-uppercase">Solutions:</span>
+                      <span className="text-uppercase">Solutions:</span>
                     </strong>{" "}
                     <br />
-                    <span style={{ color: "#000000;" }}>
-                      <span class="me-3">{caseData.solutions}</span>
+                    <span style={{ color: "#000000" }}>
+                      <span className="me-3">{caseData.solutions}</span>
                     </span>
                   </li>
                 )}
               </ul>
             </div>
-            <div class="col-md-8">
+            <div className="col-md-8">
               <PrismicRichText field={caseData.about_business.richText} />
               <div className="bcindv-info-box p-3 py-5 mt-5 mb-4">
                 <PrismicRichText field={caseData.detail.richText} />
               </div>
             </div>
           </div>
-          <div class="bcindv-info-vid ratio ratio-16x9">
+          <div className="bcindv-info-vid ratio ratio-16x9">
             <video controls="controls" width="1000" height="500">
               <source src={caseData.intro_video.url} type="video/mp4" />
             </video>
           </div>
         </div>
       </section>
-      <div class="bcindv-info-border mx-auto">&nbsp;</div>
-      <section class="article-main-canvas">
-        <div class="article-main">
-          <div class="article-body">
+      <div className="bcindv-info-border mx-auto">&nbsp;</div>
+      <section className="article-main-canvas">
+        <div className="article-main">
+          <div className="article-body">
             <PrismicRichText
               field={caseData.content.richText}
               components={{
@@ -195,7 +200,7 @@ const CaseDetailPage = ({ data }) => {
             {caseData.quote ? (
               <blockquote>
                 <p>{caseData.quote}</p>
-                <span class="credit">- {caseData.credit}</span>
+                <span className="credit">- {caseData.credit}</span>
               </blockquote>
             ) : (
               <>
@@ -220,23 +225,23 @@ const CaseDetailPage = ({ data }) => {
       </section>
 
       {/* <!-- MORE NEWS --> */}
-      <section class="bc-entry-canvas case-studies-canvas">
-        <div class="bc-entry">
-          <div class="container">
-            <div class="case-studies">
-              <div class="cs-head">
+      <section className="bc-entry-canvas case-studies-canvas">
+        <div className="bc-entry">
+          <div className="container">
+            <div className="case-studies">
+              <div className="cs-head">
                 <h2>Discover More</h2>
-                <a href="../business-cases.html" class="button button-text">
+                <a href="../business-cases.html" className="button button-text">
                   Go to Business Cases →
                 </a>
               </div>
             </div>
 
-            <div class="row">
+            <div className="row">
               {moreCases.map((item, idx) => (
-                <div class="col-md-6" key={idx}>
-                  <article class="bc-article">
-                    <a href={`/case/${item.uid}`} class="bc-article-thumb">
+                <div className="col-md-6" key={idx}>
+                  <article className="bc-article">
+                    <a href={`/case/${item.uid}`} className="bc-article-thumb">
                       <img
                         src={item.data.case_image.url}
                         alt={item.data.heading}
@@ -245,11 +250,10 @@ const CaseDetailPage = ({ data }) => {
                     <h3>
                       <a href={`/case/${item.uid}`}>{item.data.heading}</a>
                     </h3>
-                    <p>
-                      <p>{item.data.summary}</p>
-                    </p>
-                    <div class="bc-article-others">
-                      <span class="bc-article-date">{item.data.date}</span> -{" "}
+                    <p>{item.data.summary}</p>
+                    <div className="bc-article-others">
+                      <span className="bc-article-date">{item.data.date}</span>{" "}
+                      -{" "}
                       {
                         categories.filter(
                           category =>
