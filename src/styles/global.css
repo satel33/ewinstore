@@ -29176,7 +29176,7 @@ video:focus {
 }
 
 .faq-accordion .accordion-button:after {
-  background-image: url(/images/icons/icon-angle-down.svg);
+  background-image: url(../images/icons/icon-angle-down.svg);
   width: 30px;
 }
 
@@ -33693,4 +33693,6 @@ video:focus {
   font-size: 18pt !important;
 }
 
-.block-img {text-align: center;}
+.block-img {
+  text-align: center;
+}

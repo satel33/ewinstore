@@ -125,6 +125,33 @@ import offices1 from "../images/pages/careers/offices/1.png"
 import offices2 from "../images/pages/careers/offices/2.jpg"
 import offices3 from "../images/pages/careers/offices/3.jpg"
 
+//Contact
+import contactHeroImg from "../images/pages/contact/contact-hero-bg.jpg"
+import iconFB from "../images/icons/social/circle/icon-fb.svg"
+import iconYB from "../images/icons/social/circle/icon-youtube.svg"
+import iconLN from "../images/icons/social/circle/icon-linkedin.svg"
+import iconTW from "../images/icons/social/circle/icon-twitter.svg"
+import chinaMapMob from "../images/pages/contact/mobile-map/china.png"
+import europeMapMob from "../images/pages/contact/mobile-map/europe.png"
+import asiaMapMob from "../images/pages/contact/mobile-map/asia-pacific.png"
+import northAmericaImg from "../images/pages/contact/mobile-map/north-america.png"
+import chinaFlag from "../images/flags/flag-china.svg"
+import hongkongFlag from "../images/flags/flag-hongkong.svg"
+import netherlandsFlag from "../images/flags/flag-netherlands.svg"
+import franceFlag from "../images/flags/flag-france.svg"
+import ukFlag from "../images/flags/flag-uk.svg"
+import usaFlag from "../images/flags/flag-usa.svg"
+import australiaFlag from "../images/flags/flag-australia.svg"
+import newzealandFlag from "../images/flags/flag-newzealand.svg"
+import flagsImg from "../images/flags/images.png"
+import contactPressBG from "../images/pages/contact/contact-press-media-bg.jpg"
+import contactPamIcon from "../images/pages/contact/contact-pam-icon.svg"
+import contactHelpBG from "../images/pages/contact/contact-help-support-bg.jpg"
+import iconSearch from "../images/icons/icon-search.svg"
+
+import introBook from "../downloads/intro.pdf"
+import guideBook from "../downloads/hanshow_brand_guide.pdf"
+
 export const Logo = logo
 
 export const ESLIcon = eslIcon
@@ -250,3 +277,30 @@ export const Team1 = team1
 export const Offices1 = offices1
 export const Offices2 = offices2
 export const Offices3 = offices3
+
+//Contact
+export const ContactHeroImg = contactHeroImg
+export const IconFB = iconFB
+export const IconYB = iconYB
+export const IconLN = iconLN
+export const IconTW = iconTW
+export const ChinaMapMob = chinaMapMob
+export const EuropeMapMob = europeMapMob
+export const AsiaMapMob = asiaMapMob
+export const NorthAmericaImg = northAmericaImg
+export const ChinaFlag = chinaFlag
+export const HongkongFlag = hongkongFlag
+export const NetherlandsFlag = netherlandsFlag
+export const FranceFlag = franceFlag
+export const UKFlag = ukFlag
+export const USAFlag = usaFlag
+export const AustraliaFlag = australiaFlag
+export const NewzealandFlag = newzealandFlag
+export const FlagsImg = flagsImg
+export const ContactPressBG = contactPressBG
+export const ContactPamIcon = contactPamIcon
+export const IconSearch = iconSearch
+export const ContactHelpBG = contactHelpBG
+
+export const IntroBook = introBook
+export const GuideBook = guideBook
