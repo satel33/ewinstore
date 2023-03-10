@@ -30,8 +30,23 @@ import linkedinShareIcon from "../images/icons/share/linkedin.svg"
 import googleShareIcon from "../images/icons/share/google.svg"
 import twitterShareIcon from "../images/icons/share/twitter.svg"
 import facebookShareIcon from "../images/icons/share/facebook.svg"
-
 import feedIcon from "../images/icons/share/feed.svg"
+
+import speedIcon from "../images/icons/benefits/speed-icon.svg"
+import accuracyIcon from "../images/icons/benefits/accuracy-icon.svg"
+import engagementIcon from "../images/icons/benefits/engagement-icon.svg"
+import vividDisplayIcon from "../images/icons/benefits/vivid-display-icon.svg"
+import reducesCostsIcon from "../images/icons/benefits/reduces-costs-icon.svg"
+import compatibilityIcon from "../images/icons/benefits/compatibility-icon.svg"
+import orderPickingIcon from "../images/icons/benefits/order-picking-icon.svg"
+import inventoryIcon from "../images/icons/benefits/inventory-icon.svg"
+import remoteIcon from "../images/pages/stellar-pro/icon-remote.svg"
+import reducesIcon from "../images/pages/stellar-pro/icon-reduces.svg"
+import inventoryStellarIcon from "../images/pages/stellar-pro/icon-inventory.svg"
+import revenueIcon from "../images/pages/stellar-pro/icon-revenue.svg"
+import engagementStellarIcon from "../images/pages/stellar-pro/icon-engagement.svg"
+import compatibilityStellarIcon from "../images/pages/stellar-pro/icon-compatibility.svg"
+import accuracyStellarIcon from "../images/pages/stellar-pro/icon-accuracy.svg"
 
 //Backgournd images
 import heroBG from "../videos/hero-bg.mp4"
@@ -152,6 +167,76 @@ import iconSearch from "../images/icons/icon-search.svg"
 import introBook from "../downloads/intro.pdf"
 import guideBook from "../downloads/hanshow_brand_guide.pdf"
 
+//Nebular
+import whyChooseProd from "../images/pages/nebular/why-choose-prod.png"
+import nebularLuxProduct from "../images/pages/nebular/nebular-lux-product.png"
+import solarBg from "../images/pages/nebular/solar-bg.jpg"
+import eslConnector from "../images/pages/nebular/esl-connector.png"
+import eslProd0 from "../images/pages/nebular/esl-prod-0.png"
+import eslProd1 from "../images/pages/nebular/esl-prod-1.png"
+import eslProd2 from "../images/pages/nebular/esl-prod-2.png"
+import eslProd3 from "../images/pages/nebular/esl-prod-3.png"
+import eslProd4 from "../images/pages/nebular/esl-prod-4.png"
+import eslProd5 from "../images/pages/nebular/esl-prod-5.png"
+import eslProd6 from "../images/pages/nebular/esl-prod-6.png"
+import nebular154 from "../images/pages/nebular/specifications/154.png"
+import nebular213 from "../images/pages/nebular/specifications/213.png"
+import nebular266 from "../images/pages/nebular/specifications/266.png"
+import nebular290 from "../images/pages/nebular/specifications/290.png"
+import nebular346 from "../images/pages/nebular/specifications/346.png"
+import nebular350 from "../images/pages/nebular/specifications/350.png"
+import nebular420 from "../images/pages/nebular/specifications/420.png"
+import nebular583 from "../images/pages/nebular/specifications/583.png"
+import nebular750 from "../images/pages/nebular/specifications/750.png"
+import nebular213F from "../images/pages/nebular/specifications/213F.png"
+import nebular266F from "../images/pages/nebular/specifications/266F.png"
+import nebular350F from "../images/pages/nebular/specifications/350F.png"
+
+//Stellar Pro
+import stellarIntroProd from "../images/pages/stellar-pro/intro-prod.png"
+import stellarIntroBanner from "../images/pages/stellar-pro/intro-banner.jpg"
+import stellarBg from "../images/pages/stellar-pro/features-bg.jpg"
+import stellar154 from "../images/pages/stellar-pro/specifications/154.png"
+import stellar213 from "../images/pages/stellar-pro/specifications/213.png"
+import stellar266 from "../images/pages/stellar-pro/specifications/266.png"
+import stellar290 from "../images/pages/stellar-pro/specifications/290.png"
+import stellar420 from "../images/pages/stellar-pro/specifications/420.png"
+import stellar583 from "../images/pages/stellar-pro/specifications/583.png"
+import stellar750 from "../images/pages/stellar-pro/specifications/750.png"
+import stellar1020 from "../images/pages/stellar-pro/specifications/1020.png"
+import stellar213F from "../images/pages/stellar-pro/specifications/213F.png"
+import stellar266F from "../images/pages/stellar-pro/specifications/266F.png"
+
+//Lumina Aqua
+import luminaAquaIntro from "../images/pages/lumina-aqua/introduction/lumina-aqua-intro.png"
+import modelImg1 from "../images/pages/lumina-aqua/models/lumina-x1.png"
+import modelImg2 from "../images/pages/lumina-aqua/models/lumina-x2.png"
+import modelImg3 from "../images/pages/lumina-aqua/models/2.png"
+import modelImg4 from "../images/pages/lumina-aqua/models/lumina-aqua-video.png"
+import luminaFeatures from "../images/pages/lumina-aqua/features/1.jpg"
+import luminaBenefits1 from "../images/pages/lumina-aqua/benefits/1.png"
+import luminaBenefits2 from "../images/pages/lumina-aqua/benefits/2.png"
+import luminaBenefits3 from "../images/pages/lumina-aqua/benefits/3.png"
+import luminaBenefits4 from "../images/pages/lumina-aqua/benefits/4.png"
+
+//Lumina Edge
+import luminaEdgeHero from "../images/pages/lumina-edge/hero/page-lumina-edge-hero-bg.jpg"
+import luminaEdgeIntro1 from "../images/pages/lumina-edge/introduction/1.png"
+import luminaEdgeIntro2 from "../images/pages/lumina-edge/introduction/2.jpg"
+import luminaEdgeBenefits1 from "../images/pages/lumina-edge/benefits/1.png"
+import luminaEdgeAccuracyIcon from "../images/pages/lumina-edge/icons/benefits-icons/accuracy.svg"
+import luminaEdgeVividIcon from "../images/pages/lumina-edge/icons/benefits-icons/vivid.svg"
+import luminaEdgePromotionIcon from "../images/pages/lumina-edge/icons/benefits-icons/promotion.svg"
+import luminaEdgeCreatvidIcon from "../images/pages/lumina-edge/icons/benefits-icons/creatvid.svg"
+
+//Lumina Max
+import luminaMaxIntro1 from "../images/pages/lumina-max/introduction/1.png"
+import luminaMaxBenefits1 from "../images/pages/lumina-max/benefits/1.png"
+import luminaMaxSpeedIcon from "../images/pages/lumina-max/icons/benefits-icons/speed.svg"
+import luminaMaxPromotionIcon from "../images/pages/lumina-max/icons/benefits-icons/promotion.svg"
+import luminaMaxInventoryIcon from "../images/pages/lumina-max/icons/benefits-icons/inventory.svg"
+import luminaMaxEntry from "../images/pages/lumina-max/entry/2.jpg"
+
 export const Logo = logo
 
 export const ESLIcon = eslIcon
@@ -178,8 +263,23 @@ export const FacebookShareIcon = facebookShareIcon
 export const LinkedinShareIcon = linkedinShareIcon
 export const TwitterShareIcon = twitterShareIcon
 export const GoogleShareIcon = googleShareIcon
-
 export const FeedIcon = feedIcon
+
+export const SpeedIcon = speedIcon
+export const AccuracyIcon = accuracyIcon
+export const EngagementIcon = engagementIcon
+export const VividDisplayIcon = vividDisplayIcon
+export const ReducesCostsIcon = reducesCostsIcon
+export const CompatibilityIcon = compatibilityIcon
+export const OrderPickingIcon = orderPickingIcon
+export const InventoryIcon = inventoryIcon
+export const RemoteIcon = remoteIcon
+export const ReducesIcon = reducesIcon
+export const InventoryStellarIcon = inventoryStellarIcon
+export const RevenueIcon = revenueIcon
+export const EngagementStellarIcon = engagementStellarIcon
+export const CompatibilityStellarIcon = compatibilityStellarIcon
+export const AccuracyStellarIcon = accuracyStellarIcon
 
 export const News1 = news1
 export const News2 = news2
@@ -304,3 +404,73 @@ export const ContactHelpBG = contactHelpBG
 
 export const IntroBook = introBook
 export const GuideBook = guideBook
+
+//Nebular
+export const WhyChooseProd = whyChooseProd
+export const NebularLuxProduct = nebularLuxProduct
+export const SolarBg = solarBg
+export const EslConnector = eslConnector
+export const EslProd0 = eslProd0
+export const EslProd1 = eslProd1
+export const EslProd2 = eslProd2
+export const EslProd3 = eslProd3
+export const EslProd4 = eslProd4
+export const EslProd5 = eslProd5
+export const EslProd6 = eslProd6
+export const Nebular154 = nebular154
+export const Nebular213 = nebular213
+export const Nebular266 = nebular266
+export const Nebular290 = nebular290
+export const Nebular346 = nebular346
+export const Nebular350 = nebular350
+export const Nebular420 = nebular420
+export const Nebular583 = nebular583
+export const Nebular750 = nebular750
+export const Nebular213F = nebular213F
+export const Nebular266F = nebular266F
+export const Nebular350F = nebular350F
+
+//Stellar Pro
+export const StellarIntroProd = stellarIntroProd
+export const StellarIntroBanner = stellarIntroBanner
+export const StellarBg = stellarBg
+export const Stellar154 = stellar154
+export const Stellar213 = stellar213
+export const Stellar266 = stellar266
+export const Stellar290 = stellar290
+export const Stellar420 = stellar420
+export const Stellar583 = stellar583
+export const Stellar750 = stellar750
+export const Stellar1020 = stellar1020
+export const Stellar213F = stellar213F
+export const Stellar266F = stellar266F
+
+//Lumina Aqua Intro
+export const LuminaAquaIntro = luminaAquaIntro
+export const ModelImg1 = modelImg1
+export const ModelImg2 = modelImg2
+export const ModelImg3 = modelImg3
+export const ModelImg4 = modelImg4
+export const LuminaFeatures = luminaFeatures
+export const LuminaBenefits1 = luminaBenefits1
+export const LuminaBenefits2 = luminaBenefits2
+export const LuminaBenefits3 = luminaBenefits3
+export const LuminaBenefits4 = luminaBenefits4
+
+//Lumina Edge
+export const LuminaEdgeHero = luminaEdgeHero
+export const LuminaEdgeIntro1 = luminaEdgeIntro1
+export const LuminaEdgeIntro2 = luminaEdgeIntro2
+export const LuminaEdgeBenefits1 = luminaEdgeBenefits1
+export const LuminaEdgeAccuracyIcon = luminaEdgeAccuracyIcon
+export const LuminaEdgeVividIcon = luminaEdgeVividIcon
+export const LuminaEdgePromotionIcon = luminaEdgePromotionIcon
+export const LuminaEdgeCreatvidIcon = luminaEdgeCreatvidIcon
+
+//Lumina Max
+export const LuminaMaxIntro1 = luminaMaxIntro1
+export const LuminaMaxBenefits1 = luminaMaxBenefits1
+export const LuminaMaxSpeedIcon = luminaMaxSpeedIcon
+export const LuminaMaxPromotionIcon = luminaMaxPromotionIcon
+export const LuminaMaxInventoryIcon = luminaMaxInventoryIcon
+export const LuminaMaxEntry = luminaMaxEntry

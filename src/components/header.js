@@ -79,6 +79,12 @@ const Header = ({ navCases, navNews }) => (
                             </li>
                           </ul>
                           <ul className="fade-in-left delay-03s"></ul>
+                          <ul className="fade-in-left delay-03s">
+                            <li>
+                              <a href="/nowa">NOWA</a>
+                            </li>
+                          </ul>
+                          <ul className="fade-in-left delay-03s"></ul>
                         </div>
                         <div className="links">
                           <div className="head-link fade-in-top">

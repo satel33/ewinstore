@@ -29208,7 +29208,7 @@ video:focus {
 }
 
 .mh-volume-toggle {
-  background: url(/images/icons/mute-icon.svg) 50% no-repeat;
+  background: url(../images/icons/mute-icon.svg) 50% no-repeat;
   background-size: cover;
   bottom: 20px;
   cursor: pointer;
@@ -29577,7 +29577,7 @@ video:focus {
 }
 
 .nebular-esl-slider .splide__slide:before {
-  background: url(/images/pages/nebular/esl-connector.png) 0 0 / contain
+  background: url(../images/pages/nebular/esl-connector.png) 0 0 / contain
     no-repeat;
   content: "";
   display: block;
