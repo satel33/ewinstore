@@ -47,6 +47,10 @@ import revenueIcon from "../images/pages/stellar-pro/icon-revenue.svg"
 import engagementStellarIcon from "../images/pages/stellar-pro/icon-engagement.svg"
 import compatibilityStellarIcon from "../images/pages/stellar-pro/icon-compatibility.svg"
 import accuracyStellarIcon from "../images/pages/stellar-pro/icon-accuracy.svg"
+import easyCheckoutIcon from "../images/icons/benefits/easy-checkout-icon.svg"
+import userFriendlyIcon from "../images/icons/benefits/user-friendly-icon.svg"
+import qualityScannerIcon from "../images/icons/benefits/quality-scanner-icon.svg"
+import oneStopShoppingIcon from "../images/icons/benefits/one-stop-shopping-icon.svg"
 
 //Backgournd images
 import heroBG from "../videos/hero-bg.mp4"
@@ -207,6 +211,53 @@ import stellar1020 from "../images/pages/stellar-pro/specifications/1020.png"
 import stellar213F from "../images/pages/stellar-pro/specifications/213F.png"
 import stellar266F from "../images/pages/stellar-pro/specifications/266F.png"
 
+//Smart Trolley
+import trolleyHero from "../images/pages/smart-trolley/hero-section.png"
+import trolleyHeroImg1 from "../images/pages/smart-trolley/hero-section-image1.png"
+import trolleyIntro from "../images/pages/smart-trolley/introduction.png"
+import upradingImg from "../images/pages/smart-trolley/uprading-image.png"
+import upradingBack from "../images/pages/smart-trolley/upgrading-background.jpg"
+import benefitsRetailers from "../images/pages/smart-trolley/benefits-to-retailers.png"
+import smartTrolleyImg from "../images/pages/smart-trolley/smart-trolley-image.png"
+import benefitsCustomers1 from "../images/pages/smart-trolley/benefits-customers/1.png"
+import benefitsCustomers2 from "../images/pages/smart-trolley/benefits-customers/2.png"
+import benefitsCustomers3 from "../images/pages/smart-trolley/benefits-customers/3.png"
+import benefitsCustomers4 from "../images/pages/smart-trolley/benefits-customers/4.png"
+import benefitsCustomers5 from "../images/pages/smart-trolley/benefits-customers/5.png"
+import benefitsCustomers6 from "../images/pages/smart-trolley/benefits-customers/6.png"
+import benefitsCustomers7 from "../images/pages/smart-trolley/benefits-customers/7.png"
+import benefitsCustomers8 from "../images/pages/smart-trolley/benefits-customers/8.png"
+
+//Self Service Kisok
+import scHeroBG from "../images/pages/self-checkout/sc-hero-bg.jpg"
+import scIntroProd from "../images/pages/self-checkout/sc-intro-prod.png"
+import scIntroBenefitsProd from "../images/pages/self-checkout/sc-intro-benefits-prod.png"
+import scIntroBenefitsBg from "../images/pages/self-checkout/sc-intro-benefits-bg.jpg"
+
+//Spatrol
+import spatrolHeroProd1 from "../images/pages/spatrol/spatrol-hero-prod-1.png"
+import spatrolHeroProd2 from "../images/pages/spatrol/spatrol-hero-prod-2.png"
+import spatrolHeroBg from "../images/pages/spatrol/spatrol-hero-bg.jpg"
+import spatrolIntroProd from "../images/pages/spatrol/spatrol-intro-prod.png"
+import designConceptImg1 from "../images/pages/spatrol/design-concept-image-1.png"
+import designConceptImg5 from "../images/pages/spatrol/design-concept-image-5.png"
+import spatrolPHProd from "../images/pages/spatrol/spatrol-ph-prod.png"
+import powerfulDetectionIcon from "../images/pages/spatrol/powerful-detection-icon.svg"
+import reduceLaborCostsIcon from "../images/pages/spatrol/reduce-labor-costs-icon.svg"
+import outOfStockIcon from "../images/pages/spatrol/out-of-stock-icon.svg"
+import properLabelingIcon from "../images/pages/spatrol/proper-labeling-icon.svg"
+import assuranceIcon from "../images/pages/spatrol/assurance-icon.svg"
+import analyzesShelvesDataIcon from "../images/pages/spatrol/analyzes-shelves-data-icon.svg"
+
+//Visight
+import vsightHeroBg from "../images/pages/visight/vsight-hero-bg.jpg"
+import vsightIntroProd from "../images/pages/visight/visight-intro-prod.png"
+import vsightIntroLogos from "../images/pages/visight/visight-intro-logos.png"
+import vsightIntroSlide1 from "../images/pages/visight/intro-slider/1.png"
+import vsightIntroSlide3 from "../images/pages/visight/intro-slider/3.png"
+import vsightIntroSlide4 from "../images/pages/visight/intro-slider/4.png"
+import visightPhProd from "../images/pages/visight/visight-ph-prod.png"
+
 //Lumina Aqua
 import luminaAquaIntro from "../images/pages/lumina-aqua/introduction/lumina-aqua-intro.png"
 import modelImg1 from "../images/pages/lumina-aqua/models/lumina-x1.png"
@@ -280,6 +331,10 @@ export const RevenueIcon = revenueIcon
 export const EngagementStellarIcon = engagementStellarIcon
 export const CompatibilityStellarIcon = compatibilityStellarIcon
 export const AccuracyStellarIcon = accuracyStellarIcon
+export const EasyCheckoutIcon = easyCheckoutIcon
+export const QualityScannerIcon = qualityScannerIcon
+export const UserFriendlyIcon = userFriendlyIcon
+export const OneStopShoppingIcon = oneStopShoppingIcon
 
 export const News1 = news1
 export const News2 = news2
@@ -474,3 +529,50 @@ export const LuminaMaxSpeedIcon = luminaMaxSpeedIcon
 export const LuminaMaxPromotionIcon = luminaMaxPromotionIcon
 export const LuminaMaxInventoryIcon = luminaMaxInventoryIcon
 export const LuminaMaxEntry = luminaMaxEntry
+
+//Smart Trolley
+export const TrolleyHero = trolleyHero
+export const TrolleyHeroImg1 = trolleyHeroImg1
+export const TrolleyIntro = trolleyIntro
+export const UpradingImg = upradingImg
+export const UpradingBack = upradingBack
+export const BenefitsRetailers = benefitsRetailers
+export const SmartTrolleyImg = smartTrolleyImg
+export const BenefitsCustomers1 = benefitsCustomers1
+export const BenefitsCustomers2 = benefitsCustomers2
+export const BenefitsCustomers3 = benefitsCustomers3
+export const BenefitsCustomers4 = benefitsCustomers4
+export const BenefitsCustomers5 = benefitsCustomers5
+export const BenefitsCustomers6 = benefitsCustomers6
+export const BenefitsCustomers7 = benefitsCustomers7
+export const BenefitsCustomers8 = benefitsCustomers8
+
+//Self Service Kisok
+export const ScHeroBG = scHeroBG
+export const ScIntroProd = scIntroProd
+export const ScIntroBenefitsProd = scIntroBenefitsProd
+export const ScIntroBenefitsBg = scIntroBenefitsBg
+
+//Spatrol
+export const SpatrolHeroProd1 = spatrolHeroProd1
+export const SpatrolHeroProd2 = spatrolHeroProd2
+export const SpatrolHeroBG = spatrolHeroBg
+export const SpatrolIntroProd = spatrolIntroProd
+export const DesignConceptImg1 = designConceptImg1
+export const DesignConceptImg5 = designConceptImg5
+export const SpatrolPHProd = spatrolPHProd
+export const PowerfulDetectionIcon = powerfulDetectionIcon
+export const ReduceLaborCostsIcon = reduceLaborCostsIcon
+export const OutOfStockIcon = outOfStockIcon
+export const ProperLabelingIcon = properLabelingIcon
+export const AssuranceIcon = assuranceIcon
+export const AnalyzesShelvesDataIcon = analyzesShelvesDataIcon
+
+//Visight
+export const VsightHeroBg = vsightHeroBg
+export const VsightIntroProd = vsightIntroProd
+export const VsightIntroLogos = vsightIntroLogos
+export const VsightIntroSlide1 = vsightIntroSlide1
+export const VsightIntroSlide3 = vsightIntroSlide3
+export const VsightIntroSlide4 = vsightIntroSlide4
+export const VisightPhProd = visightPhProd

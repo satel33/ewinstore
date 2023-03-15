@@ -11,6 +11,7 @@
     "gatsby": "^5.6.0",
     "gatsby-plugin-image": "^3.6.0",
     "gatsby-plugin-manifest": "^5.6.0",
+    "gatsby-plugin-prismic-previews": "^5.2.10",
     "gatsby-plugin-sharp": "^5.6.0",
     "gatsby-source-filesystem": "^5.6.0",
     "gatsby-source-prismic": "^5.2.10",

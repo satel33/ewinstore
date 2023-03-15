@@ -18495,13 +18495,14 @@ video:focus {
 }
 
 .benefits-slider .splide__arrow--prev {
-  background: url(/images/icons/left-angle-icon.svg) 50% / contain no-repeat;
+  background: url("../images/icons/left-angle-icon.svg") 50% / contain no-repeat;
   left: 0;
   width: 0.75rem;
 }
 
 .benefits-slider .splide__arrow--next {
-  background: url(/images/icons/right-angle-icon.svg) 50% / contain no-repeat;
+  background: url("../images/icons/right-angle-icon.svg") 50% / contain
+    no-repeat;
   left: 8.125rem;
   width: 0.75rem;
 }
@@ -29577,7 +29578,7 @@ video:focus {
 }
 
 .nebular-esl-slider .splide__slide:before {
-  background: url(../images/pages/nebular/esl-connector.png) 0 0 / contain
+  background: url("../images/pages/nebular/esl-connector.png") 0 0 / contain
     no-repeat;
   content: "";
   display: block;
@@ -33259,7 +33260,7 @@ video:focus {
 }
 
 .st-btc-slider .splide__slide p:after {
-  background: url(/images/icons/connector.png) 50% / contain no-repeat;
+  background: url("../images/icons/connector.png") 50% / contain no-repeat;
   content: "";
   height: 12.5rem;
   left: -245px;
