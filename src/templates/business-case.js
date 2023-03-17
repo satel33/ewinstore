@@ -5,6 +5,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import { PrismicRichText } from "@prismicio/react"
 import { withPrismicPreview } from 'gatsby-plugin-prismic-previews'
+
 import Newsletter from "../components/newsletter"
 import Achievements from "../components/achievements"
 import {

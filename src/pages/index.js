@@ -1,5 +1,6 @@
 import * as React from "react"
 import { graphql, Link } from "gatsby"
+import { withPrismicPreview } from 'gatsby-plugin-prismic-previews'
 
 import Layout from "../components/layout"
 import Achievements from "../components/achievements"
@@ -135,4 +136,4 @@ export const pageQuery = graphql`
   }
 `
 
-export default IndexPage
+export default withPrismicPreview(IndexPage)

@@ -10,7 +10,7 @@ import { componentResolverFromMap } from 'gatsby-plugin-prismic-previews'
 import { prismicRepo } from '../../prismic-configuration'
 import { linkResolver } from './linkResolver'
 
-// import PageTemplate from '../templates/page'
+import HomeTemplate from '../pages/index'
 import BusinessCaseTemplate from '../templates/business-case'
 
 /**
@@ -27,7 +27,7 @@ export const repositoryConfigs = [
     repositoryName: prismicRepo,
     linkResolver,
     componentResolver: componentResolverFromMap({
-      // page: PageTemplate,
+      homepage: HomeTemplate,
       business_case: BusinessCaseTemplate,
     }),
   },
