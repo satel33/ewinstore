@@ -17,7 +17,7 @@ exports.createPages = async ({ graphql, actions }) => {
   queryResults.data.allPrismicBusinessCase?.nodes.forEach(node => {
     createPage({
       path: `/case/${node.uid}`,
-      component: path.resolve(`src/templates/case.js`),
+      component: path.resolve(`src/templates/business-case.js`),
       context: {
         id: node.id,
       },

@@ -45,5 +45,12 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: 'gatsby-plugin-prismic-previews',
+      options: {
+        repositoryName: prismicConfig.prismicRepo,
+        linkResolver: require("./src/utils/linkResolver").linkResolver,
+      },
+    },
   ],
 }

@@ -4,6 +4,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import { PrismicRichText } from "@prismicio/react"
+import { withPrismicPreview } from 'gatsby-plugin-prismic-previews'
 import Newsletter from "../components/newsletter"
 import Achievements from "../components/achievements"
 import {
@@ -275,7 +276,7 @@ const CaseDetailPage = ({ data }) => {
   )
 }
 
-export default CaseDetailPage
+export default withPrismicPreview(CaseDetailPage)
 
 export const query = graphql`
   query PrismicBusinessCase($id: String) {
