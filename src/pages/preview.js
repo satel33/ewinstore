@@ -7,7 +7,7 @@ const PreviewPage = ({ isPreview, ...props }) => {
 
   return <Layout>
     <section className="text-center">
-      <p>Loading Preview...</p>
+      <h1>Loading Preview...</h1>
     </section>
   </Layout>
 }
