@@ -1,5 +1,6 @@
 import * as React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
+import { useMergePrismicPreviewData } from 'gatsby-plugin-prismic-previews'
 import loadable from "@loadable/component"
 import { BgTestimonials, BigHLogo } from "../../utils/imgImport"
 
@@ -13,10 +14,11 @@ const Testimonials = () => {
     dots: true,
   }
 
-  const { testimonials } = useStaticQuery(graphql`
+  const staticData = useStaticQuery(graphql`
     query {
       testimonials: allPrismicHomepage {
         nodes {
+          _previewable
           data {
             t_heading
             t_description
@@ -29,6 +31,8 @@ const Testimonials = () => {
       }
     }
   `)
+  const { data } = useMergePrismicPreviewData(staticData)
+  const { testimonials } = data
 
   return (
     <section className="testimonials-canvas">

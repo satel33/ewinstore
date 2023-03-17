@@ -12,6 +12,7 @@ export const pageQuery = graphql`
   query {
     allPrismicNews(sort: { data: { date: DESC } }) {
       nodes {
+        _previewable
         data {
           title
           date

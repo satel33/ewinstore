@@ -110,6 +110,7 @@ export const pageQuery = graphql`
   query {
     allPrismicBusinessCase(sort: { data: { date: DESC } }, limit: 3) {
       nodes {
+        _previewable
         data {
           case_image {
             url
@@ -123,6 +124,7 @@ export const pageQuery = graphql`
     }
     allPrismicNews(sort: { data: { date: DESC } }, limit: 3) {
       nodes {
+        _previewable
         data {
           title
           date

@@ -284,6 +284,7 @@ export const query = graphql`
     allPrismicBusinessCase(limit: 4, sort: { data: { date: DESC } }) {
       nodes {
         uid
+        _previewable
         data {
           case_image {
             url
@@ -300,6 +301,7 @@ export const query = graphql`
     allPrismicCaseCategory {
       nodes {
         uid
+        _previewable
         data {
           category
         }
@@ -307,6 +309,7 @@ export const query = graphql`
     }
     prismicBusinessCase(id: { eq: $id }) {
       uid
+      _previewable
       data {
         case_category {
           uid

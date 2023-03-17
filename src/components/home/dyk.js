@@ -1,14 +1,16 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { useMergePrismicPreviewData } from 'gatsby-plugin-prismic-previews'
 import loadable from "@loadable/component"
 
 const OwlCarousel = loadable(() => import("react-owl-carousel"))
 
 const DidYouKnow = () => {
-  const { dyk_data } = useStaticQuery(graphql`
+  const staticData = useStaticQuery(graphql`
     query {
       dyk_data: allPrismicHomepage {
         nodes {
+          _previewable
           data {
             dyk_slider {
               dyk_text
@@ -18,6 +20,8 @@ const DidYouKnow = () => {
       }
     }
   `)
+  const { data } = useMergePrismicPreviewData(staticData)
+  const { dyk_data } = data
 
   return (
     <section className="dyk-canvas">

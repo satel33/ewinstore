@@ -1,15 +1,18 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import loadable from "@loadable/component"
+import { useMergePrismicPreviewData } from 'gatsby-plugin-prismic-previews'
+
 import { HeroBG, HeroBGMobile } from "../../utils/imgImport"
 
 const OwlCarousel = loadable(() => import("react-owl-carousel"))
 
 const HomeHero = () => {
-  const { hero_data } = useStaticQuery(graphql`
+  const staticData = useStaticQuery(graphql`
     query {
       hero_data: allPrismicHomepage {
         nodes {
+          _previewable
           data {
             hero_text_slider {
               slider_text
@@ -21,6 +24,8 @@ const HomeHero = () => {
       }
     }
   `)
+  const { data } = useMergePrismicPreviewData(staticData)
+  const { hero_data } = data
 
   return (
     <section className="home-hero-canvas main-hero-canvas">

@@ -13,6 +13,7 @@ const Layout = ({ children }) => {
       ) {
         nodes {
           uid
+          _previewable
           data {
             featured_client
             case_category {
@@ -24,6 +25,7 @@ const Layout = ({ children }) => {
       nav_news: allPrismicNews(sort: { data: { date: DESC } }, limit: 2) {
         nodes {
           uid
+          _previewable
           data {
             thumb_img {
               url

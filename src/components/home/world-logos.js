@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { useMergePrismicPreviewData } from 'gatsby-plugin-prismic-previews'
 import loadable from "@loadable/component"
 import { BgGlobe } from "../../utils/imgImport"
 
@@ -30,10 +31,11 @@ const WorldLogos = () => {
     },
   }
 
-  const { world_logs } = useStaticQuery(graphql`
+  const staticData = useStaticQuery(graphql`
     query {
       world_logs: allPrismicHomepage {
         nodes {
+          _previewable
           data {
             logos {
               logo_img {
@@ -45,6 +47,8 @@ const WorldLogos = () => {
       }
     }
   `)
+  const { data } = useMergePrismicPreviewData(staticData)
+  const { world_logs } = data
 
   return (
     <section className="world-logos-canvas">
