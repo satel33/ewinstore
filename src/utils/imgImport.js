@@ -52,6 +52,8 @@ import userFriendlyIcon from "../images/icons/benefits/user-friendly-icon.svg"
 import qualityScannerIcon from "../images/icons/benefits/quality-scanner-icon.svg"
 import oneStopShoppingIcon from "../images/icons/benefits/one-stop-shopping-icon.svg"
 
+import rightArrowTitleIcon from "../images/icons/right-arrow-title-icon.svg"
+
 //Backgournd images
 import heroBG from "../videos/hero-bg.mp4"
 import heroBGMobile from "../videos/hero-bg-mobile.mp4"
@@ -288,6 +290,66 @@ import luminaMaxPromotionIcon from "../images/pages/lumina-max/icons/benefits-ic
 import luminaMaxInventoryIcon from "../images/pages/lumina-max/icons/benefits-icons/inventory.svg"
 import luminaMaxEntry from "../images/pages/lumina-max/entry/2.jpg"
 
+// ElectronicShelfLabels
+import electronicShelfBG from "../images/pages/solutions/hero/page-solutions-hero-bg.jpg"
+import solutionsBenefits1 from "../images/pages/solutions/benefits/1.jpg"
+import solutionsBenefits2 from "../images/pages/solutions/benefits/2.jpg"
+import solutionsBenefits3 from "../images/pages/solutions/benefits/3.jpg"
+import solutionsBenefits4 from "../images/pages/solutions/benefits/4.jpg"
+import solutionsBenefits5 from "../images/pages/solutions/benefits/5.jpg"
+import solutionsBenefits6 from "../images/pages/solutions/benefits/6.jpg"
+import solutionsBenefits7 from "../images/pages/solutions/benefits/7.jpg"
+import solutionsFeatured1 from "../images/pages/solutions/advantages/en/featured-1.png"
+import solutionsFeatured2 from "../images/pages/solutions/advantages/en/featured-2.png"
+import solutionsFeatured3 from "../images/pages/solutions/advantages/en/featured-3.png"
+import solutionsFeatured4 from "../images/pages/solutions/advantages/en/featured-4.png"
+import solutionsFeatured5 from "../images/pages/solutions/advantages/en/featured-5.png"
+import solutionsFeatured6 from "../images/pages/solutions/advantages/en/featured-6.png"
+import solutionsFeatured7 from "../images/pages/solutions/advantages/en/featured-7.png"
+import solutionsAdvantages1 from "../images/pages/solutions/advantages/1.svg"
+import solutionsAdvantages2 from "../images/pages/solutions/advantages/2.svg"
+import solutionsAdvantages3 from "../images/pages/solutions/advantages/3.svg"
+import solutionsNebular from "../images/pages/solutions/product-ranges/nebular.jpg"
+import solutionsStellarPro from "../images/pages/solutions/product-ranges/stellar-pro.jpg"
+
+// AIPlusSolutions
+import aiSolutionHero from "../images/pages/ai-plus-solutions/hero/page-ai-plus-solutions-hero-bg.jpg"
+import aiSolutionIntro1 from "../images/pages/ai-plus-solutions/intro/1.png"
+import aiSolutionDesign1 from "../images/pages/ai-plus-solutions/design/1.png"
+import aiSolutionProducts1 from "../images/pages/ai-plus-solutions/products/1.jpg"
+
+//AllStarCloud
+import allStarHero from "../images/pages/all-star-cloud/hero/page-all-star-cloud-hero-bg.jpg"
+import allStarIntro1 from "../images/pages/all-star-cloud/intro-1.png"
+import allStarIntro2 from "../images/pages/all-star-cloud/intro-2.png"
+import allStarBGLogo from "../images/pages/all-star-cloud/bg-logo.png"
+import allStarSolution1 from "../images/pages/all-star-cloud/solution/1.jpg"
+import allStarSolution2 from "../images/pages/all-star-cloud/solution/2.jpg"
+import allStarSolution3 from "../images/pages/all-star-cloud/solution/3.jpg"
+import allStarSolution4 from "../images/pages/all-star-cloud/solution/4.png"
+import allStarSolution5 from "../images/pages/all-star-cloud/solution/5.png"
+import allStarShilpc1 from "../images/pages/all-star-cloud/shilpc/1.jpg"
+import allStarShilpc2 from "../images/pages/all-star-cloud/shilpc/2.png"
+
+// IntelligentStore
+import intelligentHero from "../images/pages/intelligent-store/hero/page-intelligent-store-hero-bg.jpg"
+import intelligentBenefits1 from "../images/pages/intelligent-store/benefits/1.jpg"
+import intelliStore1 from "../images/pages/intelligent-store/in-store/1.jpg"
+import intelliStore2 from "../images/pages/intelligent-store/in-store/lumina-edge.png"
+import intelliStore3 from "../images/pages/intelligent-store/in-store/lumina-max.png"
+import intelliStore4 from "../images/pages/intelligent-store/in-store/lumina-aqua.png"
+import intelSelfService1 from "../images/pages/intelligent-store/self-service/1.jpg"
+import intelSelfService2 from "../images/pages/intelligent-store/self-service/kiosk-lg.png"
+import intelSelfService3 from "../images/pages/intelligent-store/self-service/trollei-lg.png"
+import intelProduct1 from "../images/pages/intelligent-store/products/kiosk.jpg"
+import intelProduct2 from "../images/pages/intelligent-store/products/lumina-aqua.jpg"
+import intelProduct3 from "../images/pages/intelligent-store/products/lumina-edge.jpg"
+import intelProduct4 from "../images/pages/intelligent-store/products/lumina-max.jpg"
+import intelProduct5 from "../images/pages/intelligent-store/products/smart-trolley.jpg"
+
+// News
+import bmGlobal from "../images/pages/news/bm-global.png"
+
 export const Logo = logo
 
 export const ESLIcon = eslIcon
@@ -335,6 +397,8 @@ export const EasyCheckoutIcon = easyCheckoutIcon
 export const QualityScannerIcon = qualityScannerIcon
 export const UserFriendlyIcon = userFriendlyIcon
 export const OneStopShoppingIcon = oneStopShoppingIcon
+
+export const RightArrowTitleIcon = rightArrowTitleIcon
 
 export const News1 = news1
 export const News2 = news2
@@ -576,3 +640,63 @@ export const VsightIntroSlide1 = vsightIntroSlide1
 export const VsightIntroSlide3 = vsightIntroSlide3
 export const VsightIntroSlide4 = vsightIntroSlide4
 export const VisightPhProd = visightPhProd
+
+// ElectronicShelfLabels
+export const ElectronicShelfBG = electronicShelfBG
+export const SolutionsBenefits1 = solutionsBenefits1
+export const SolutionsBenefits2 = solutionsBenefits2
+export const SolutionsBenefits3 = solutionsBenefits3
+export const SolutionsBenefits4 = solutionsBenefits4
+export const SolutionsBenefits5 = solutionsBenefits5
+export const SolutionsBenefits6 = solutionsBenefits6
+export const SolutionsBenefits7 = solutionsBenefits7
+export const SolutionsFeatured1 = solutionsFeatured1
+export const SolutionsFeatured2 = solutionsFeatured2
+export const SolutionsFeatured3 = solutionsFeatured3
+export const SolutionsFeatured4 = solutionsFeatured4
+export const SolutionsFeatured5 = solutionsFeatured5
+export const SolutionsFeatured6 = solutionsFeatured6
+export const SolutionsFeatured7 = solutionsFeatured7
+export const SolutionsAdvantages1 = solutionsAdvantages1
+export const SolutionsAdvantages2 = solutionsAdvantages2
+export const SolutionsAdvantages3 = solutionsAdvantages3
+export const SolutionsNebular = solutionsNebular
+export const SolutionsStellarPro = solutionsStellarPro
+
+// AIPlusSolutions
+export const AISolutionHero = aiSolutionHero
+export const AISolutionIntro1 = aiSolutionIntro1
+export const AISolutionDesign1 = aiSolutionDesign1
+export const AISolutionProducts1 = aiSolutionProducts1
+
+//AllStarCloud
+export const AllStarHero = allStarHero
+export const AllStarIntro1 = allStarIntro1
+export const AllStarIntro2 = allStarIntro2
+export const AllStarBGLogo = allStarBGLogo
+export const AllStarSolution1 = allStarSolution1
+export const AllStarSolution2 = allStarSolution2
+export const AllStarSolution3 = allStarSolution3
+export const AllStarSolution4 = allStarSolution4
+export const AllStarSolution5 = allStarSolution5
+export const AllStarShilpc1 = allStarShilpc1
+export const AllStarShilpc2 = allStarShilpc2
+
+// IntelligentStore
+export const IntelligentHero = intelligentHero
+export const IntelligentBenefits1 = intelligentBenefits1
+export const IntelliStore1 = intelliStore1
+export const IntelliStore2 = intelliStore2
+export const IntelliStore3 = intelliStore3
+export const IntelliStore4 = intelliStore4
+export const IntelSelfService1 = intelSelfService1
+export const IntelSelfService2 = intelSelfService2
+export const IntelSelfService3 = intelSelfService3
+export const IntelProduct1 = intelProduct1
+export const IntelProduct2 = intelProduct2
+export const IntelProduct3 = intelProduct3
+export const IntelProduct4 = intelProduct4
+export const IntelProduct5 = intelProduct5
+
+// News
+export const BMGlobal = bmGlobal

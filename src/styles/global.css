@@ -21989,6 +21989,7 @@ video:focus {
   padding-right: 1.25rem;
   padding-top: 1.875rem;
   width: calc(100% - 400px);
+  margin: 0 auto;
 }
 
 .sol-benefits-canvas

@@ -36,6 +36,13 @@
         "label": "Article Image"
       }
     },
+    "location": {
+      "type": "Text",
+      "config": {
+        "label": "Location",
+        "placeholder": "Location"
+      }
+    },
     "content": {
       "type": "StructuredText",
       "config": {
@@ -59,6 +66,13 @@
         "default_value": "Blog",
         "label": "Type",
         "placeholder": "News Type"
+      }
+    },
+    "featured": {
+      "type": "Boolean",
+      "config": {
+        "default_value": false,
+        "label": "Featured"
       }
     }
   }
