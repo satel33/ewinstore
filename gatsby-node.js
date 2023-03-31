@@ -11,6 +11,12 @@ exports.createPages = async ({ graphql, actions }) => {
           uid
         }
       }
+      allPrismicNews {
+        nodes {
+          id
+          uid
+        }
+      }
     }
   `)
 
@@ -18,6 +24,15 @@ exports.createPages = async ({ graphql, actions }) => {
     createPage({
       path: `/case/${node.uid}`,
       component: path.resolve(`src/templates/business-case.js`),
+      context: {
+        id: node.id,
+      },
+    })
+  })
+  queryResults.data.allPrismicNews?.nodes.forEach(node => {
+    createPage({
+      path: `/news/${node.uid}`,
+      component: path.resolve(`src/templates/news-detail.js`),
       context: {
         id: node.id,
       },
