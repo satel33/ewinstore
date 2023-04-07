@@ -106,8 +106,8 @@ const Footer = ({ navNews }) => (
               <span className="footer-mobile-dropdown"></span>
             </div>
             <ul className="footer-mobile-dropdown-menu">
-              {navNews.map(item => (
-                <li key={item.uid}>
+              {navNews.map((item, idx) => (
+                <li key={idx}>
                   <img
                     className="footer-news-img img-fluid lazyload"
                     data-src={item.data.thumb_img.url}

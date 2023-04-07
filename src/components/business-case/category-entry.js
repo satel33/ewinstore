@@ -58,8 +58,8 @@ const CategoryEntry = ({ categories, categoryData, businessCases }) => {
           <div className="container">
             <div className="bc-articles single-news-cat-section-loadmore-3">
               {getCasesWithCategory(businessCases, categoryData.uid).map(
-                item => (
-                  <article key={item.uid}>
+                (item, idx) => (
+                  <article key={idx}>
                     <div className="article-location">
                       <img src={PinIcon} alt={item.data.location} />
                       {item.data.location}

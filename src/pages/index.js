@@ -1,6 +1,5 @@
 import * as React from "react"
 import { graphql, Link } from "gatsby"
-import { withPrismicPreview } from 'gatsby-plugin-prismic-previews'
 
 import Layout from "../components/layout"
 import Achievements from "../components/achievements"
@@ -37,8 +36,8 @@ const IndexPage = ({ data }) => {
             </div>
             <div className="cs-articles">
               <div className="row">
-                {case_studies.map(item => (
-                  <div className="col-xs-12 col-md-4" key={item.uid}>
+                {case_studies.map((item, idx) => (
+                  <div className="col-xs-12 col-md-4" key={idx}>
                     <article>
                       <Link to={`case/${item.uid}`} className="cs-thumb">
                         <img
@@ -78,8 +77,8 @@ const IndexPage = ({ data }) => {
               </div>
             </div>
             <div className="ln-articles">
-              {latest_news.map(item => (
-                <article className="wow fade-in-left  " key={item.uid}>
+              {latest_news.map((item, idx) => (
+                <article className="wow fade-in-left" key={idx}>
                   <div className="article-intro">
                     <h3>{item.data.title}</h3>
                     <span className="article-date">{item.data.date}</span>
@@ -138,4 +137,4 @@ export const pageQuery = graphql`
   }
 `
 
-export default withPrismicPreview(IndexPage)
+export default IndexPage

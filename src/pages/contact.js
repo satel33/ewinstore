@@ -1,6 +1,9 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
 
 import * as React from "react"
+import { ToastContainer, toast } from "react-toastify"
+import ContactForm from "../components/contact/contact-form"
+import SubscribeForm from "../components/contact/subscribe-form"
 
 import Layout from "../components/layout"
 import {
@@ -17,11 +20,7 @@ import {
   FranceFlag,
   GuideBook,
   HongkongFlag,
-  IconFB,
-  IconLN,
   IconSearch,
-  IconTW,
-  IconYB,
   IntroBook,
   MapImg,
   NetherlandsFlag,
@@ -29,9 +28,25 @@ import {
   NorthAmericaImg,
   UKFlag,
   USAFlag,
+  IconFB,
+  IconLN,
+  IconTW,
+  IconYB,
 } from "../utils/imgImport"
+import "react-toastify/dist/ReactToastify.css"
 
 const ContactPage = () => {
+  const showSuccessMessage = () => {
+    toast.success("Successfully Submitted!", {
+      position: toast.POSITION.TOP_RIGHT,
+    })
+  }
+  const showErrorMessage = () => {
+    toast.error("Error Happened!", {
+      position: toast.POSITION.TOP_RIGHT,
+    })
+  }
+
   return (
     <Layout>
       {/* <!-- PAGE HERO --> */}
@@ -100,142 +115,10 @@ const ContactPage = () => {
 
           <div className="row gx-md-5">
             <div className="col-md-6">
-              <form
-                method="POST"
-                action="submit-contact.html"
-                acceptCharset="UTF-8"
-              >
-                <input
-                  name="_token"
-                  type="hidden"
-                  value="OybwVxtwu1LBb2057zYDuMxm3gWzrEET12nksGXv"
-                />
-                <div className="contact-form wow fade-in-left delay-09s">
-                  <div className="mb-4">
-                    <label
-                      className="form-label text-highlight fs-5 fw-bold"
-                      htmlFor="type"
-                    >
-                      How can we help you?
-                    </label>
-                    <select className="form-select" name="type" id="type">
-                      <option defaultValue="Just leaving a message">
-                        Just leaving a message
-                      </option>
-                      <option defaultValue="Request for Catalog">
-                        Request for Catalog
-                      </option>
-                    </select>
-                  </div>
-                  <div className="row">
-                    <div className="col-md-6 mb-4">
-                      <label className="form-label" htmlFor="name">
-                        First Name <span className="text-danger">*</span>
-                      </label>
-                      <input
-                        type="text"
-                        className="form-control"
-                        name="name"
-                        id="name"
-                        value=""
-                        required
-                        readOnly
-                      />
-                    </div>
-                    <div className="col-md-6 mb-3">
-                      <label className="form-label" htmlFor="last_name">
-                        Last Name <span className="text-danger">*</span>
-                      </label>
-                      <input
-                        type="text"
-                        className="form-control"
-                        name="last_name"
-                        id="last_name"
-                        value=""
-                        required
-                        readOnly
-                      />
-                    </div>
-                  </div>
-                  <div className="mb-4">
-                    <label className="form-label mb-0" htmlFor="email">
-                      Email Address <span className="text-danger">*</span>
-                    </label>
-                    <div className="form-text mb-3">
-                      Where you want us to reply.
-                    </div>
-                    <input
-                      type="text"
-                      className="form-control"
-                      name="email"
-                      id="email"
-                      value=""
-                      readOnly
-                      required
-                    />
-                  </div>
-                  <div className="mb-4">
-                    <label className="form-label mb-0" htmlFor="company">
-                      Company <span className="text-danger">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      className="form-control"
-                      name="company"
-                      id="company"
-                      value=""
-                      readOnly
-                      required
-                    />
-                  </div>
-                  <div className="mb-4">
-                    <label className="form-label" htmlFor="country">
-                      Country and Region <span className="text-danger">*</span>
-                    </label>
-                    <select
-                      className="form-select"
-                      name="country"
-                      id="country"
-                      required
-                    >
-                      <option
-                        defaultValue=""
-                        label="Select your Country"
-                        disabled
-                      ></option>
-                    </select>
-                  </div>
-
-                  <div className="mb-5">
-                    <label className="form-label" htmlFor="message">
-                      Message <span className="text-danger">*</span>
-                    </label>
-                    <textarea
-                      className="form-control"
-                      rows="5"
-                      name="message"
-                      id="message"
-                      required
-                      readOnly
-                    ></textarea>
-                  </div>
-
-                  <div className="d-md-flex pt-2 captcha-wrap">
-                    <div
-                      className="h-captcha"
-                      data-sitekey="4afc06a5-ec5b-4904-b8cc-1d2b59bd6e18"
-                    ></div>
-                  </div>
-
-                  <div className="toast-section text-center my-4"></div>
-                  <button
-                    type="submit"
-                    className="button button-primary w-100 py-3"
-                  >
-                    Submit
-                  </button>
-                </div>
-              </form>
+              <ContactForm
+                onSuccess={showSuccessMessage}
+                onError={showErrorMessage}
+              />
             </div>
             <div className="col-md-6 text-highlight pt-5 pt-md-0  wow fade-in-right delay-1-2s">
               <div className="contact-form-right ms-md-5">
@@ -251,60 +134,10 @@ const ContactPage = () => {
                               update.
                             </p>
                           </div>
-                          <form
-                            method="POST"
-                            action="submit-subscribe.html"
-                            acceptCharset="UTF-8"
-                          >
-                            <input
-                              name="_token"
-                              type="hidden"
-                              value="OybwVxtwu1LBb2057zYDuMxm3gWzrEET12nksGXv"
-                            />
-                            <div className="subscribe-field">
-                              <input
-                                id="email"
-                                type="email"
-                                name="email"
-                                placeholder="Email Address"
-                                required
-                              />
-                              <button
-                                data-callback="subscribeSubmit"
-                                className="h-captcha"
-                                data-sitekey="4afc06a5-ec5b-4904-b8cc-1d2b59bd6e18"
-                              >
-                                Subscribe
-                              </button>
-                              <button
-                                type="submit"
-                                id="subscribe-submit-form"
-                                className="button button-white d-none"
-                              >
-                                Subscribe
-                              </button>
-                            </div>
-                            <div className="form-check">
-                              <input
-                                className="form-check-input"
-                                type="checkbox"
-                                value=""
-                                id="subsCheck"
-                                required=""
-                              />
-                              <label
-                                className="form-check-label"
-                                htmlFor="subsCheck"
-                              >
-                                I have read, agree and accept that the
-                                information that I provide will be used as
-                                detailed in the{" "}
-                                <a href="privacy-policy.html" target="_blank">
-                                  Privacy Policy.
-                                </a>
-                              </label>
-                            </div>
-                          </form>
+                          <SubscribeForm
+                            onSuccess={showSuccessMessage}
+                            onError={showErrorMessage}
+                          />
                           <p>
                             *We will only share recent news, developments and
                             opportunities and will not share your email address
@@ -990,6 +823,7 @@ const ContactPage = () => {
           </div>
         </div>
       </section>
+      <ToastContainer />
     </Layout>
   )
 }

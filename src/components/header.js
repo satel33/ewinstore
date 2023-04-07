@@ -191,8 +191,8 @@ const Header = ({ navCases, navNews }) => (
                           </span>
                           <ul className="fade-in-left delay-03s">
                             {getCasesWithCategory(navCases, "grocery").map(
-                              item => (
-                                <li key={item.uid}>
+                              (item, idx) => (
+                                <li key={idx}>
                                   <Link to={`/case/${item.uid}`}>
                                     {item.data.featured_client}
                                   </Link>
@@ -215,8 +215,8 @@ const Header = ({ navCases, navNews }) => (
                           </span>
                           <ul className="fade-in-left delay-03s">
                             {getCasesWithCategory(navCases, "electronics").map(
-                              item => (
-                                <li key={item.uid}>
+                              (item, idx) => (
+                                <li key={idx}>
                                   <Link to={`/case/${item.uid}`}>
                                     {item.data.featured_client}
                                   </Link>
@@ -234,13 +234,15 @@ const Header = ({ navCases, navNews }) => (
                             Featured Client Case Studies
                           </span>
                           <ul className="fade-in-left delay-03s">
-                            {getCasesWithCategory(navCases, "diy").map(item => (
-                              <li key={item.uid}>
-                                <Link to={`/case/${item.uid}`}>
-                                  {item.data.featured_client}
-                                </Link>
-                              </li>
-                            ))}
+                            {getCasesWithCategory(navCases, "diy").map(
+                              (item, idx) => (
+                                <li key={idx}>
+                                  <Link to={`/case/${item.uid}`}>
+                                    {item.data.featured_client}
+                                  </Link>
+                                </li>
+                              )
+                            )}
                           </ul>
                         </div>
                         <div className="links">
@@ -273,8 +275,8 @@ const Header = ({ navCases, navNews }) => (
                             {getCasesWithCategory(
                               navCases,
                               "manufacturing"
-                            ).map(item => (
-                              <li key={item.uid}>
+                            ).map((item, idx) => (
+                              <li key={idx}>
                                 <Link to={`/case/${item.uid}`}>
                                   {item.data.featured_client}
                                 </Link>
